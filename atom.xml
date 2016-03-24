@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yyljj.github.io/"/>
-  <updated>2016-03-24T05:49:47.232Z</updated>
+  <updated>2016-03-24T05:51:48.400Z</updated>
   <id>http://yyljj.github.io/</id>
   
   <author>
@@ -20,11 +20,11 @@
     <link href="http://yyljj.github.io/2016/03/23/markdown%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95/"/>
     <id>http://yyljj.github.io/2016/03/23/markdown常用语法/</id>
     <published>2016-03-23T15:23:21.000Z</published>
-    <updated>2016-03-24T05:49:47.232Z</updated>
+    <updated>2016-03-24T05:51:48.400Z</updated>
     
     <content type="html">&lt;h1 id=&quot;markdown的9中常用语法&quot;&gt;&lt;a href=&quot;#markdown的9中常用语法&quot; class=&quot;headerlink&quot; title=&quot;markdown的9中常用语法&quot;&gt;&lt;/a&gt;markdown的9中常用语法&lt;/h1&gt;&lt;p&gt;######1.标题&lt;br&gt;用# + “文字” 表示标题，一个#表示一级标题两个代表二级最高六级&lt;/p&gt;
-&lt;p&gt;#这是一级标题&lt;/p&gt;
-&lt;p&gt;##这是二级标题&lt;/p&gt;
+&lt;p&gt;#这是一级标题#&lt;/p&gt;
+&lt;p&gt;##这是二级标题##&lt;/p&gt;
 &lt;p&gt;###这是三级标题&lt;/p&gt;
 &lt;p&gt;######2.注释块&lt;br&gt;可以用 &amp;gt; + “文字” 表示注释块&lt;/p&gt;
 &lt;blockquote&gt;

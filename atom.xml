@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yyljj.github.io/"/>
-  <updated>2016-03-24T05:51:48.400Z</updated>
+  <updated>2016-03-24T05:53:17.208Z</updated>
   <id>http://yyljj.github.io/</id>
   
   <author>
@@ -20,13 +20,10 @@
     <link href="http://yyljj.github.io/2016/03/23/markdown%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95/"/>
     <id>http://yyljj.github.io/2016/03/23/markdown常用语法/</id>
     <published>2016-03-23T15:23:21.000Z</published>
-    <updated>2016-03-24T05:51:48.400Z</updated>
+    <updated>2016-03-24T05:53:17.208Z</updated>
     
     <content type="html">&lt;h1 id=&quot;markdown的9中常用语法&quot;&gt;&lt;a href=&quot;#markdown的9中常用语法&quot; class=&quot;headerlink&quot; title=&quot;markdown的9中常用语法&quot;&gt;&lt;/a&gt;markdown的9中常用语法&lt;/h1&gt;&lt;p&gt;######1.标题&lt;br&gt;用# + “文字” 表示标题，一个#表示一级标题两个代表二级最高六级&lt;/p&gt;
-&lt;p&gt;#这是一级标题#&lt;/p&gt;
-&lt;p&gt;##这是二级标题##&lt;/p&gt;
-&lt;p&gt;###这是三级标题&lt;/p&gt;
-&lt;p&gt;######2.注释块&lt;br&gt;可以用 &amp;gt; + “文字” 表示注释块&lt;/p&gt;
+&lt;h1 id=&quot;这是一级标题&quot;&gt;&lt;a href=&quot;#这是一级标题&quot; class=&quot;headerlink&quot; title=&quot;这是一级标题&quot;&gt;&lt;/a&gt;这是一级标题&lt;/h1&gt;&lt;h2 id=&quot;这是二级标题&quot;&gt;&lt;a href=&quot;#这是二级标题&quot; class=&quot;headerlink&quot; title=&quot;这是二级标题&quot;&gt;&lt;/a&gt;这是二级标题&lt;/h2&gt;&lt;h3 id=&quot;这是三级标题&quot;&gt;&lt;a href=&quot;#这是三级标题&quot; class=&quot;headerlink&quot; title=&quot;这是三级标题&quot;&gt;&lt;/a&gt;这是三级标题&lt;/h3&gt;&lt;h6 id=&quot;2-注释块&quot;&gt;&lt;a href=&quot;#2-注释块&quot; class=&quot;headerlink&quot; title=&quot;2.注释块&quot;&gt;&lt;/a&gt;2.注释块&lt;/h6&gt;&lt;p&gt;可以用 &amp;gt; + “文字” 表示注释块&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;这是一个注释块&lt;br&gt;这是注释块的第二行&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -35,32 +32,29 @@
 &lt;pre&gt;&lt;code&gt;这是一个小的注释快中的注释
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;这是注释块的第二行&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;######3.斜体&lt;br&gt;将要设置为斜体的文字两端使用1个“*”或者“_”夹起来&lt;/p&gt;
+&lt;h6 id=&quot;3-斜体&quot;&gt;&lt;a href=&quot;#3-斜体&quot; class=&quot;headerlink&quot; title=&quot;3.斜体&quot;&gt;&lt;/a&gt;3.斜体&lt;/h6&gt;&lt;p&gt;将要设置为斜体的文字两端使用1个“*”或者“_”夹起来&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;这是一个斜体&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;这也是一个斜体&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;######4.粗体&lt;br&gt;将要设置为斜体的文字两端使用2个“*”或者“_”夹起来&lt;/p&gt;
+&lt;h6 id=&quot;4-粗体&quot;&gt;&lt;a href=&quot;#4-粗体&quot; class=&quot;headerlink&quot; title=&quot;4.粗体&quot;&gt;&lt;/a&gt;4.粗体&lt;/h6&gt;&lt;p&gt;将要设置为斜体的文字两端使用2个“*”或者“_”夹起来&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;这是一个粗体&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;这也是一个粗体&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;######5.无序列表&lt;br&gt;用 “-” +“文字” 或 “+” “文字” 或“*” +“文字” 表示无序列表 注意空格 一次只能使用一种&lt;/p&gt;
+&lt;h6 id=&quot;5-无序列表&quot;&gt;&lt;a href=&quot;#5-无序列表&quot; class=&quot;headerlink&quot; title=&quot;5.无序列表&quot;&gt;&lt;/a&gt;5.无序列表&lt;/h6&gt;&lt;p&gt;用 “-” +“文字” 或 “+” “文字” 或“*” +“文字” 表示无序列表 注意空格 一次只能使用一种&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;无序一&lt;/li&gt;
 &lt;li&gt;无序二&lt;/li&gt;
 &lt;li&gt;无序三&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;######6.有序列表&lt;br&gt;使用“数字”+“.” + “文字” 注意空格&lt;/p&gt;
+&lt;h6 id=&quot;6-有序列表&quot;&gt;&lt;a href=&quot;#6-有序列表&quot; class=&quot;headerlink&quot; title=&quot;6.有序列表&quot;&gt;&lt;/a&gt;6.有序列表&lt;/h6&gt;&lt;p&gt;使用“数字”+“.” + “文字” 注意空格&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;列表一&lt;/li&gt;
 &lt;li&gt;列表二&lt;/li&gt;
 &lt;li&gt;列表三&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;######7.链接&lt;/p&gt;
-&lt;p&gt;使用[名称](url + “名字”)加链接&lt;/p&gt;
+&lt;h6 id=&quot;7-链接&quot;&gt;&lt;a href=&quot;#7-链接&quot; class=&quot;headerlink&quot; title=&quot;7.链接&quot;&gt;&lt;/a&gt;7.链接&lt;/h6&gt;&lt;p&gt;使用[名称](url + “名字”)加链接&lt;/p&gt;
 &lt;p&gt;这是一个到&lt;a href=&quot;http://www.baidu.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;百度&lt;/a&gt;的链接&lt;/p&gt;
-&lt;p&gt;######8.图片&lt;/p&gt;
-&lt;p&gt;使用![名称](url + “名字”)加图片&lt;/p&gt;
+&lt;h6 id=&quot;8-图片&quot;&gt;&lt;a href=&quot;#8-图片&quot; class=&quot;headerlink&quot; title=&quot;8.图片&quot;&gt;&lt;/a&gt;8.图片&lt;/h6&gt;&lt;p&gt;使用![名称](url + “名字”)加图片&lt;/p&gt;
 &lt;p&gt;这是一个美女的照片&lt;img src=&quot;img/mm.jpg&quot; alt=&quot;美女&quot;&gt;&lt;/p&gt;
-&lt;p&gt;######9.分割线&lt;/p&gt;
-&lt;p&gt;在空白行加三个-实现分割线&lt;/p&gt;
+&lt;h6 id=&quot;9-分割线&quot;&gt;&lt;a href=&quot;#9-分割线&quot; class=&quot;headerlink&quot; title=&quot;9.分割线&quot;&gt;&lt;/a&gt;9.分割线&lt;/h6&gt;&lt;p&gt;在空白行加三个-实现分割线&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;上面是一条分割线&lt;/p&gt;
 &lt;hr&gt;

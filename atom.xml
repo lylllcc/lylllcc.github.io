@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yyljj.github.io/"/>
-  <updated>2016-03-24T05:53:17.208Z</updated>
+  <updated>2016-03-24T05:53:18.000Z</updated>
   <id>http://yyljj.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://yyljj.github.io/2016/03/23/markdown%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95/"/>
     <id>http://yyljj.github.io/2016/03/23/markdown常用语法/</id>
     <published>2016-03-23T15:23:21.000Z</published>
-    <updated>2016-03-24T05:53:17.208Z</updated>
+    <updated>2016-03-24T05:53:18.000Z</updated>
     
     <content type="html">&lt;h1 id=&quot;markdown的9中常用语法&quot;&gt;&lt;a href=&quot;#markdown的9中常用语法&quot; class=&quot;headerlink&quot; title=&quot;markdown的9中常用语法&quot;&gt;&lt;/a&gt;markdown的9中常用语法&lt;/h1&gt;&lt;p&gt;######1.标题&lt;br&gt;用# + “文字” 表示标题，一个#表示一级标题两个代表二级最高六级&lt;/p&gt;
 &lt;h1 id=&quot;这是一级标题&quot;&gt;&lt;a href=&quot;#这是一级标题&quot; class=&quot;headerlink&quot; title=&quot;这是一级标题&quot;&gt;&lt;/a&gt;这是一级标题&lt;/h1&gt;&lt;h2 id=&quot;这是二级标题&quot;&gt;&lt;a href=&quot;#这是二级标题&quot; class=&quot;headerlink&quot; title=&quot;这是二级标题&quot;&gt;&lt;/a&gt;这是二级标题&lt;/h2&gt;&lt;h3 id=&quot;这是三级标题&quot;&gt;&lt;a href=&quot;#这是三级标题&quot; class=&quot;headerlink&quot; title=&quot;这是三级标题&quot;&gt;&lt;/a&gt;这是三级标题&lt;/h3&gt;&lt;h6 id=&quot;2-注释块&quot;&gt;&lt;a href=&quot;#2-注释块&quot; class=&quot;headerlink&quot; title=&quot;2.注释块&quot;&gt;&lt;/a&gt;2.注释块&lt;/h6&gt;&lt;p&gt;可以用 &amp;gt; + “文字” 表示注释块&lt;/p&gt;

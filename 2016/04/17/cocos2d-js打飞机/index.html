@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    
+
+    <title>
+      cocos2d-js打飞机 | yyljj的个人博客 
+    </title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    
+      <meta name="author" content="yyljj">
+    
+    
+
+    <meta name="description" content="突然想学一下cocos引擎，然后发现他们刚刚废弃了原有的cocos studio和cocos code IDE变成了cocos creater 了,原来存的视频教程以及网上的教程都基本废了。哎，只能读文档，再加上一些和原来兼容的东西慢慢来研究了。这篇文章是学习cocos creater的过程，以及做一个打飞机的小游戏的过程，在为做成之前，我会持续更新。
+首先到官网去下载cocos creater然">
+<meta property="og:type" content="article">
+<meta property="og:title" content="cocos2d-js打飞机 | yyljj的个人博客">
+<meta property="og:url" content="http://yyljj.github.io/2016/04/17/cocos2d-js打飞机/index.html">
+<meta property="og:site_name" content="yyljj的个人博客">
+<meta property="og:description" content="突然想学一下cocos引擎，然后发现他们刚刚废弃了原有的cocos studio和cocos code IDE变成了cocos creater 了,原来存的视频教程以及网上的教程都基本废了。哎，只能读文档，再加上一些和原来兼容的东西慢慢来研究了。这篇文章是学习cocos creater的过程，以及做一个打飞机的小游戏的过程，在为做成之前，我会持续更新。
+首先到官网去下载cocos creater然">
+<meta property="og:updated_time" content="2016-04-17T14:26:41.277Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="cocos2d-js打飞机 | yyljj的个人博客">
+<meta name="twitter:description" content="突然想学一下cocos引擎，然后发现他们刚刚废弃了原有的cocos studio和cocos code IDE变成了cocos creater 了,原来存的视频教程以及网上的教程都基本废了。哎，只能读文档，再加上一些和原来兼容的东西慢慢来研究了。这篇文章是学习cocos creater的过程，以及做一个打飞机的小游戏的过程，在为做成之前，我会持续更新。
+首先到官网去下载cocos creater然">
+    
+    
+    
+      <link rel="icon" type="image/x-icon" href="/favicon.png">
+    
+    <link rel="stylesheet" href="/css/uno.css">
+    <link rel="stylesheet" href="/css/highlight.css">
+    <link rel="stylesheet" href="/css/archive.css">
+    <link rel="stylesheet" href="/css/china-social-icon.css">
+
+</head>
+<body>
+
+    <span class="mobile btn-mobile-menu">
+        <i class="icon icon-list btn-mobile-menu__icon"></i>
+        <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
+    </span>
+
+    
+
+<header class="panel-cover panel-cover--collapsed">
+
+
+  <div class="panel-main">
+
+  
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        
+
+        <h1 class="panel-cover__title panel-title"><a href="/" title="link to homepage">yyljj的个人博客</a></h1>
+        <hr class="panel-cover__divider" />
+
+        
+
+        <div class="navigation-wrapper">
+
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+
+              
+                
+                <li class="navigation__item"><a href="/#blog" title="" class="blog-button">博客</a></li>
+              
+                
+                <li class="navigation__item"><a href="/about" title="" class="">关于</a></li>
+              
+                
+                <li class="navigation__item"><a href="http://github.com/yyljj" title="" class="">github</a></li>
+              
+
+            </ul>
+          </nav>
+
+          <!-- ----------------------------
+To add a new social icon simply duplicate one of the list items from below
+and change the class in the <i> tag to match the desired social network
+and then add your link to the <a>. Here is a full list of social network
+classes that you can use:
+
+    icon-social-500px
+    icon-social-behance
+    icon-social-delicious
+    icon-social-designer-news
+    icon-social-deviant-art
+    icon-social-digg
+    icon-social-dribbble
+    icon-social-facebook
+    icon-social-flickr
+    icon-social-forrst
+    icon-social-foursquare
+    icon-social-github
+    icon-social-google-plus
+    icon-social-hi5
+    icon-social-instagram
+    icon-social-lastfm
+    icon-social-linkedin
+    icon-social-medium
+    icon-social-myspace
+    icon-social-path
+    icon-social-pinterest
+    icon-social-rdio
+    icon-social-reddit
+    icon-social-skype
+    icon-social-spotify
+    icon-social-stack-overflow
+    icon-social-steam
+    icon-social-stumbleupon
+    icon-social-treehouse
+    icon-social-tumblr
+    icon-social-twitter
+    icon-social-vimeo
+    icon-social-xbox
+    icon-social-yelp
+    icon-social-youtube
+    icon-social-zerply
+    icon-mail
+
+-------------------------------->
+
+<!-- add social info here -->
+
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay"></div>
+  </div>
+</header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner entry">
+            
+
+<article class="post-container post-container--single">
+
+  <header class="post-header">
+    
+    <h1 class="post-title">cocos2d-js打飞机</h1>
+
+    
+
+    <div class="post-meta">
+      <time datetime="2016-04-17" class="post-meta__date date">2016-04-17</time> 
+
+      <span class="post-meta__tags tags">
+
+          
+
+          
+
+      </span>
+    </div>
+    
+    
+
+  </header>
+
+  <section id="post-content" class="article-content post">
+    <p>突然想学一下cocos引擎，然后发现他们刚刚废弃了原有的cocos studio和cocos code IDE变成了cocos creater 了,原来存的视频教程以及网上的教程都基本废了。哎，只能读文档，再加上一些和原来兼容的东西慢慢来研究了。<br>这篇文章是学习cocos creater的过程，以及做一个打飞机的小游戏的过程，在为做成之前，我会持续更新。</p>
+<p>首先到官网去下载<a href="http://www.cocos.com/download/creator/" target="_blank" rel="external">cocos creater</a>然后安装就可以了。这个集成了cocos2d-x -js -lua 的引擎，不用外加配置，非常方便。</p>
+
+  </section>
+
+  
+
+<section class="post-comments">
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+      var disqus_shortname = 'yyljj'; 
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</section>
+
+
+  
+
+<section class="post-comments">
+
+    <div class="ds-thread" data-thread-key="2016/04/17/cocos2d-js打飞机/"></div>
+
+    <script type="text/javascript">
+      var duoshuoQuery = {short_name:"yyljj"};
+      (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] 
+        || document.getElementsByTagName('body')[0]).appendChild(ds);
+      })();
+    </script> 
+
+</section>
+
+
+</article>
+
+
+            <footer class="footer">
+
+    <span class="footer__copyright">by<a href="https://github.com/yyljj">yyljj</a></span>
+    
+</footer>
+        </div>
+    </div>
+
+    <!-- js files -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/scale.fix.js"></script>
+    
+
+    
+
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript"> 
+        $(document).ready(function(){
+            MathJax.Hub.Config({ 
+                tex2jax: {inlineMath: [['[latex]','[/latex]'], ['\\(','\\)']]} 
+            });
+        });
+    </script>
+
+
+    
+
+    <script src="/js/awesome-toc.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $.awesome_toc({
+                overlay: true,
+                contentId: "post-content",
+            });
+        });
+    </script>
+
+
+    
+    
+    <!--kill ie6 -->
+<!--[if IE 6]>
+  <script src="//letskillie6.googlecode.com/svn/trunk/2/zh_CN.js"></script>
+<![endif]-->
+
+</body>
+</html>

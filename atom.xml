@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yyljj.github.io/"/>
-  <updated>2016-04-09T14:45:06.306Z</updated>
+  <updated>2016-04-17T14:26:41.277Z</updated>
   <id>http://yyljj.github.io/</id>
   
   <author>
@@ -14,6 +14,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>cocos2d-js打飞机</title>
+    <link href="http://yyljj.github.io/2016/04/17/cocos2d-js%E6%89%93%E9%A3%9E%E6%9C%BA/"/>
+    <id>http://yyljj.github.io/2016/04/17/cocos2d-js打飞机/</id>
+    <published>2016-04-17T13:51:52.000Z</published>
+    <updated>2016-04-17T14:26:41.277Z</updated>
+    
+    <content type="html">&lt;p&gt;突然想学一下cocos引擎，然后发现他们刚刚废弃了原有的cocos studio和cocos code IDE变成了cocos creater 了,原来存的视频教程以及网上的教程都基本废了。哎，只能读文档，再加上一些和原来兼容的东西慢慢来研究了。&lt;br&gt;这篇文章是学习cocos creater的过程，以及做一个打飞机的小游戏的过程，在为做成之前，我会持续更新。&lt;/p&gt;
+&lt;p&gt;首先到官网去下载&lt;a href=&quot;http://www.cocos.com/download/creator/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;cocos creater&lt;/a&gt;然后安装就可以了。这个集成了cocos2d-x -js -lua 的引擎，不用外加配置，非常方便。&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;突然想学一下cocos引擎，然后发现他们刚刚废弃了原有的cocos studio和cocos code IDE变成了cocos creater 了,原来存的视频教程以及网上的教程都基本废了。哎，只能读文档，再加上一些和原来兼容的东西慢慢来研究了。&lt;br&gt;这篇文章是学习coc
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>想了好久还是决定放弃ACM</title>

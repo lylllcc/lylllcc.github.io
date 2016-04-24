@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yyljj.github.io/"/>
-  <updated>2016-04-17T14:26:41.277Z</updated>
+  <updated>2016-04-22T14:53:17.408Z</updated>
   <id>http://yyljj.github.io/</id>
   
   <author>
@@ -14,6 +14,42 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>python语法学习笔记</title>
+    <link href="http://yyljj.github.io/2016/04/22/python%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <id>http://yyljj.github.io/2016/04/22/python语法学习笔记/</id>
+    <published>2016-04-22T13:58:39.000Z</published>
+    <updated>2016-04-22T14:53:17.408Z</updated>
+    
+    <content type="html">&lt;p&gt;突然想整只爬虫玩玩，于是研究一下python。第一编程语言是C，导致感觉除了类似C以外的语法都很奇怪。接触了一下python之后感觉有种发现新大陆的感觉。&lt;/p&gt;&lt;br&gt;&lt;p&gt;python语法非常简单。而且和人的习惯非常类似，感觉用他来做第一语言才是正确的想法(当然学校也肯定有他的想法，这就不是我能理解的哈)&lt;/p&gt;
+
+&lt;h4 id=&quot;1-注释&quot;&gt;&lt;a href=&quot;#1-注释&quot; class=&quot;headerlink&quot; title=&quot;1.注释&quot;&gt;&lt;/a&gt;1.注释&lt;/h4&gt;&lt;p&gt; #+”内容” 就是注释&lt;br&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;#print “hello word”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&quot;2-声明变量&quot;&gt;&lt;a href=&quot;#2-声明变量&quot; class=&quot;headerlink&quot; title=&quot;2.声明变量&quot;&gt;&lt;/a&gt;2.声明变量&lt;/h4&gt;&lt;p&gt;直接用等式就可以了&lt;br&gt;        a=1&lt;br&gt;        b=”hello world”&lt;/p&gt;
+&lt;h4 id=&quot;3-判断&quot;&gt;&lt;a href=&quot;#3-判断&quot; class=&quot;headerlink&quot; title=&quot;3.判断&quot;&gt;&lt;/a&gt;3.判断&lt;/h4&gt;&lt;p&gt;if  条件表达式 ：&lt;br&gt;　　….代码&lt;br&gt;elif  条件表达式 ：&lt;br&gt;　　….代码&lt;br&gt;else: ….代码&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;if a&amp;gt;1 :
+        print(&amp;quot;a&amp;gt;1&amp;quot;)  #缩进不能省
+elif a&amp;lt;0:
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;　           print(“a&amp;lt;0”)&lt;br&gt;        else: print(“0&amp;lt;a&amp;lt;1”)&lt;/p&gt;
+&lt;h4 id=&quot;4-循环&quot;&gt;&lt;a href=&quot;#4-循环&quot; class=&quot;headerlink&quot; title=&quot;4.循环&quot;&gt;&lt;/a&gt;4.循环&lt;/h4&gt;&lt;p&gt;循环也相当简单，直接上代码。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;for i in rand(0,100):
+　　print i ＃循环输出０-99
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;个人感觉语法相当简单。非常适合学习。当然仁者见仁智者见智，毕竟php才是最好的编程语言。&lt;/p&gt;
+
+
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;突然想整只爬虫玩玩，于是研究一下python。第一编程语言是C，导致感觉除了类似C以外的语法都很奇怪。接触了一下python之后感觉有种发现新大陆的感觉。&lt;/p&gt;&lt;br&gt;&lt;p&gt;python语法非常简单。而且和人的习惯非常类似，感觉用他来做第一语言才是正确的想法(当然学校也肯
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>cocos2d-js打飞机</title>
@@ -59,7 +95,7 @@
     <link href="http://yyljj.github.io/2016/03/23/markdown%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95/"/>
     <id>http://yyljj.github.io/2016/03/23/markdown常用语法/</id>
     <published>2016-03-23T15:23:21.000Z</published>
-    <updated>2016-03-24T05:53:18.000Z</updated>
+    <updated>2016-04-22T14:46:27.805Z</updated>
     
     <content type="html">&lt;h1 id=&quot;markdown的9中常用语法&quot;&gt;&lt;a href=&quot;#markdown的9中常用语法&quot; class=&quot;headerlink&quot; title=&quot;markdown的9中常用语法&quot;&gt;&lt;/a&gt;markdown的9中常用语法&lt;/h1&gt;&lt;p&gt;######1.标题&lt;br&gt;用# + “文字” 表示标题，一个#表示一级标题两个代表二级最高六级&lt;/p&gt;
 &lt;h1 id=&quot;这是一级标题&quot;&gt;&lt;a href=&quot;#这是一级标题&quot; class=&quot;headerlink&quot; title=&quot;这是一级标题&quot;&gt;&lt;/a&gt;这是一级标题&lt;/h1&gt;&lt;h2 id=&quot;这是二级标题&quot;&gt;&lt;a href=&quot;#这是二级标题&quot; class=&quot;headerlink&quot; title=&quot;这是二级标题&quot;&gt;&lt;/a&gt;这是二级标题&lt;/h2&gt;&lt;h3 id=&quot;这是三级标题&quot;&gt;&lt;a href=&quot;#这是三级标题&quot; class=&quot;headerlink&quot; title=&quot;这是三级标题&quot;&gt;&lt;/a&gt;这是三级标题&lt;/h3&gt;&lt;h6 id=&quot;2-注释块&quot;&gt;&lt;a href=&quot;#2-注释块&quot; class=&quot;headerlink&quot; title=&quot;2.注释块&quot;&gt;&lt;/a&gt;2.注释块&lt;/h6&gt;&lt;p&gt;可以用 &amp;gt; + “文字” 表示注释块&lt;/p&gt;
@@ -97,7 +133,10 @@
 &lt;hr&gt;
 &lt;p&gt;上面是一条分割线&lt;/p&gt;
 &lt;hr&gt;
-</content>
+&lt;h6 id=&quot;10-代码块&quot;&gt;&lt;a href=&quot;#10-代码块&quot; class=&quot;headerlink&quot; title=&quot;10.代码块&quot;&gt;&lt;/a&gt;10.代码块&lt;/h6&gt;&lt;p&gt;tab + 四个空格&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;这是代码快第一行
+这是第二行
+&lt;/code&gt;&lt;/pre&gt;</content>
     
     <summary type="html">
     

@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yyljj.github.io/"/>
-  <updated>2016-04-22T14:53:17.408Z</updated>
+  <updated>2016-04-28T04:41:21.756Z</updated>
   <id>http://yyljj.github.io/</id>
   
   <author>
@@ -16,28 +16,35 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>python定向爬虫实战</title>
+    <link href="http://yyljj.github.io/2016/04/28/python%E5%AE%9A%E5%90%91%E7%88%AC%E8%99%AB%E5%AE%9E%E6%88%98/"/>
+    <id>http://yyljj.github.io/2016/04/28/python定向爬虫实战/</id>
+    <published>2016-04-28T04:41:21.000Z</published>
+    <updated>2016-04-28T04:41:21.756Z</updated>
+    
+    <content type="html"></content>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>python语法学习笔记</title>
     <link href="http://yyljj.github.io/2016/04/22/python%E8%AF%AD%E6%B3%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     <id>http://yyljj.github.io/2016/04/22/python语法学习笔记/</id>
     <published>2016-04-22T13:58:39.000Z</published>
-    <updated>2016-04-22T14:53:17.408Z</updated>
+    <updated>2016-04-28T08:51:44.711Z</updated>
     
     <content type="html">&lt;p&gt;突然想整只爬虫玩玩，于是研究一下python。第一编程语言是C，导致感觉除了类似C以外的语法都很奇怪。接触了一下python之后感觉有种发现新大陆的感觉。&lt;/p&gt;&lt;br&gt;&lt;p&gt;python语法非常简单。而且和人的习惯非常类似，感觉用他来做第一语言才是正确的想法(当然学校也肯定有他的想法，这就不是我能理解的哈)&lt;/p&gt;
 
-&lt;h4 id=&quot;1-注释&quot;&gt;&lt;a href=&quot;#1-注释&quot; class=&quot;headerlink&quot; title=&quot;1.注释&quot;&gt;&lt;/a&gt;1.注释&lt;/h4&gt;&lt;p&gt; #+”内容” 就是注释&lt;br&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;#print “hello word”&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h4 id=&quot;2-声明变量&quot;&gt;&lt;a href=&quot;#2-声明变量&quot; class=&quot;headerlink&quot; title=&quot;2.声明变量&quot;&gt;&lt;/a&gt;2.声明变量&lt;/h4&gt;&lt;p&gt;直接用等式就可以了&lt;br&gt;        a=1&lt;br&gt;        b=”hello world”&lt;/p&gt;
-&lt;h4 id=&quot;3-判断&quot;&gt;&lt;a href=&quot;#3-判断&quot; class=&quot;headerlink&quot; title=&quot;3.判断&quot;&gt;&lt;/a&gt;3.判断&lt;/h4&gt;&lt;p&gt;if  条件表达式 ：&lt;br&gt;　　….代码&lt;br&gt;elif  条件表达式 ：&lt;br&gt;　　….代码&lt;br&gt;else: ….代码&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;if a&amp;gt;1 :
-        print(&amp;quot;a&amp;gt;1&amp;quot;)  #缩进不能省
-elif a&amp;lt;0:
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;　           print(“a&amp;lt;0”)&lt;br&gt;        else: print(“0&amp;lt;a&amp;lt;1”)&lt;/p&gt;
-&lt;h4 id=&quot;4-循环&quot;&gt;&lt;a href=&quot;#4-循环&quot; class=&quot;headerlink&quot; title=&quot;4.循环&quot;&gt;&lt;/a&gt;4.循环&lt;/h4&gt;&lt;p&gt;循环也相当简单，直接上代码。&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;for i in rand(0,100):
-　　print i ＃循环输出０-99
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;个人感觉语法相当简单。非常适合学习。当然仁者见仁智者见智，毕竟php才是最好的编程语言。&lt;/p&gt;
+&lt;h4 id=&quot;1-注释&quot;&gt;&lt;a href=&quot;#1-注释&quot; class=&quot;headerlink&quot; title=&quot;1.注释&quot;&gt;&lt;/a&gt;1.注释&lt;/h4&gt;&lt;p&gt; #+”内容” 就是注释&lt;br&gt;&lt;br&gt;&lt;figure class=&quot;highlight stylus&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;selector-id&quot;&gt;#print&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;hello word&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h4 id=&quot;2-声明变量&quot;&gt;&lt;a href=&quot;#2-声明变量&quot; class=&quot;headerlink&quot; title=&quot;2.声明变量&quot;&gt;&lt;/a&gt;2.声明变量&lt;/h4&gt;&lt;p&gt;直接用等式就可以了&lt;br&gt;&lt;figure class=&quot;highlight ini&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attr&quot;&gt;a&lt;/span&gt;=&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attr&quot;&gt;b&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;hello world&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h4 id=&quot;3-判断&quot;&gt;&lt;a href=&quot;#3-判断&quot; class=&quot;headerlink&quot; title=&quot;3.判断&quot;&gt;&lt;/a&gt;3.判断&lt;/h4&gt;&lt;p&gt;if  条件表达式 ：&lt;br&gt;　　….代码&lt;br&gt;elif  条件表达式 ：&lt;br&gt;　　….代码&lt;br&gt;else: ….代码&lt;br&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; a&amp;gt;1 :&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;built_in&quot;&gt;print&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;a&amp;gt;1&quot;&lt;/span&gt;)  &lt;span class=&quot;comment&quot;&gt;#缩进不能省&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;elif&lt;/span&gt; a&amp;lt;0:&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;built_in&quot;&gt;print&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;a&amp;lt;0&quot;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;else&lt;/span&gt;: &lt;span class=&quot;built_in&quot;&gt;print&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;0&amp;lt;a&amp;lt;1&quot;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h4 id=&quot;4-循环&quot;&gt;&lt;a href=&quot;#4-循环&quot; class=&quot;headerlink&quot; title=&quot;4.循环&quot;&gt;&lt;/a&gt;4.循环&lt;/h4&gt;&lt;p&gt;循环也相当简单，直接上代码。&lt;br&gt;&lt;figure class=&quot;highlight stylus&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;selector-tag&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;in&lt;/span&gt; rand(&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;,&lt;span class=&quot;number&quot;&gt;100&lt;/span&gt;):&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    print &lt;span class=&quot;selector-tag&quot;&gt;i&lt;/span&gt; ＃循环输出&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;-&lt;span class=&quot;number&quot;&gt;99&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;个人感觉语法相当简单。非常适合学习。当然仁者见仁智者见智，毕竟php才是最好的编程语言。&lt;/p&gt;
 
 
 </content>
@@ -52,31 +59,11 @@ elif a&amp;lt;0:
   </entry>
   
   <entry>
-    <title>cocos2d-js打飞机</title>
-    <link href="http://yyljj.github.io/2016/04/17/cocos2d-js%E6%89%93%E9%A3%9E%E6%9C%BA/"/>
-    <id>http://yyljj.github.io/2016/04/17/cocos2d-js打飞机/</id>
-    <published>2016-04-17T13:51:52.000Z</published>
-    <updated>2016-04-17T14:26:41.277Z</updated>
-    
-    <content type="html">&lt;p&gt;突然想学一下cocos引擎，然后发现他们刚刚废弃了原有的cocos studio和cocos code IDE变成了cocos creater 了,原来存的视频教程以及网上的教程都基本废了。哎，只能读文档，再加上一些和原来兼容的东西慢慢来研究了。&lt;br&gt;这篇文章是学习cocos creater的过程，以及做一个打飞机的小游戏的过程，在为做成之前，我会持续更新。&lt;/p&gt;
-&lt;p&gt;首先到官网去下载&lt;a href=&quot;http://www.cocos.com/download/creator/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;cocos creater&lt;/a&gt;然后安装就可以了。这个集成了cocos2d-x -js -lua 的引擎，不用外加配置，非常方便。&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;突然想学一下cocos引擎，然后发现他们刚刚废弃了原有的cocos studio和cocos code IDE变成了cocos creater 了,原来存的视频教程以及网上的教程都基本废了。哎，只能读文档，再加上一些和原来兼容的东西慢慢来研究了。&lt;br&gt;这篇文章是学习coc
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
     <title>想了好久还是决定放弃ACM</title>
     <link href="http://yyljj.github.io/2016/04/08/%E6%83%B3%E4%BA%86%E5%A5%BD%E4%B9%85%E8%BF%98%E6%98%AF%E5%86%B3%E5%AE%9A%E6%94%BE%E5%BC%83ACM/"/>
     <id>http://yyljj.github.io/2016/04/08/想了好久还是决定放弃ACM/</id>
     <published>2016-04-08T12:25:02.000Z</published>
-    <updated>2016-04-09T14:45:06.306Z</updated>
+    <updated>2016-04-22T13:50:42.195Z</updated>
     
     <content type="html">&lt;p&gt;放弃了之后心情顿时感觉很轻松。刚上大一的时候开始接触acm。当时是因为C语言的作业都刷完了，也没什么事情可以做了，偶尔和舍友一起用oj做个题，也慢慢的喜欢上这种解决问题的快乐。&lt;/p&gt;&lt;br&gt;&lt;p&gt;后来因为感觉学业有点紧，自己想学的东西也有点多，就中途放弃了一次。到寒假又有时间了，又参加了学校的集训。当时还有点跟不上训练的进度，还后悔过中途放弃呢。&lt;/p&gt;&lt;br&gt;&lt;p&gt;怎么说呢。个人感觉认准一个方向去发展，认真去做，最后一定会成功的。acm只是我备选多个方向中的一个吧。并不是我最想发展的方向。我们的第一编程语言是C，在学C的同时我也在自学C++，之所以这么做，是因为我想做游戏，想做一些喜欢的东西。后来发现用C++做acm也特别方便。哎，搞到后来我都忘了最初的想法了。是啊，我当初自学C++的动力不就是喜欢吗。现在整的不伦不类的。C++也没学好。&lt;/p&gt;&lt;br&gt;&lt;p&gt;当然还有时间的问题，虽然说时间是挤出来的，但我有些应该陪家人，陪喜欢的人的时间我真的很不想挤出来，上大学以来和他们一起的时间少了我感觉已经很对不起他们了。在这种情况下牺牲周末，牺牲假期我真的是做不出来吧。&lt;/p&gt;&lt;br&gt;&lt;p&gt;想起来当初选软件工程这个专业也不就想专心做点可以用的东西出来吗，老实说acm这个东西和软件工程的关系也不大。真是的，一个破玩意还弄得我这么为难。&lt;/p&gt;&lt;br&gt;&lt;p&gt;大一的第一个寒假在家里自学PHP同时玩acm，哎，要是专攻一样的话现在PHP应该可以实际应用了吧，而不是还只是会弄一些基本的的不能再基本的东西了吧。&lt;/p&gt;&lt;br&gt;&lt;p&gt;总之，这次是真的放弃了，彻底放弃，以后也不会再去抱有一丝的幻想。以后专心朝着自己选择的方向发展就好。没事写写博客，逛逛知乎github等。&lt;/p&gt;
 </content>
@@ -95,7 +82,7 @@ elif a&amp;lt;0:
     <link href="http://yyljj.github.io/2016/03/23/markdown%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95/"/>
     <id>http://yyljj.github.io/2016/03/23/markdown常用语法/</id>
     <published>2016-03-23T15:23:21.000Z</published>
-    <updated>2016-04-22T14:46:27.805Z</updated>
+    <updated>2016-04-28T08:46:09.332Z</updated>
     
     <content type="html">&lt;h1 id=&quot;markdown的9中常用语法&quot;&gt;&lt;a href=&quot;#markdown的9中常用语法&quot; class=&quot;headerlink&quot; title=&quot;markdown的9中常用语法&quot;&gt;&lt;/a&gt;markdown的9中常用语法&lt;/h1&gt;&lt;p&gt;######1.标题&lt;br&gt;用# + “文字” 表示标题，一个#表示一级标题两个代表二级最高六级&lt;/p&gt;
 &lt;h1 id=&quot;这是一级标题&quot;&gt;&lt;a href=&quot;#这是一级标题&quot; class=&quot;headerlink&quot; title=&quot;这是一级标题&quot;&gt;&lt;/a&gt;这是一级标题&lt;/h1&gt;&lt;h2 id=&quot;这是二级标题&quot;&gt;&lt;a href=&quot;#这是二级标题&quot; class=&quot;headerlink&quot; title=&quot;这是二级标题&quot;&gt;&lt;/a&gt;这是二级标题&lt;/h2&gt;&lt;h3 id=&quot;这是三级标题&quot;&gt;&lt;a href=&quot;#这是三级标题&quot; class=&quot;headerlink&quot; title=&quot;这是三级标题&quot;&gt;&lt;/a&gt;这是三级标题&lt;/h3&gt;&lt;h6 id=&quot;2-注释块&quot;&gt;&lt;a href=&quot;#2-注释块&quot; class=&quot;headerlink&quot; title=&quot;2.注释块&quot;&gt;&lt;/a&gt;2.注释块&lt;/h6&gt;&lt;p&gt;可以用 &amp;gt; + “文字” 表示注释块&lt;/p&gt;
@@ -133,10 +120,8 @@ elif a&amp;lt;0:
 &lt;hr&gt;
 &lt;p&gt;上面是一条分割线&lt;/p&gt;
 &lt;hr&gt;
-&lt;h6 id=&quot;10-代码块&quot;&gt;&lt;a href=&quot;#10-代码块&quot; class=&quot;headerlink&quot; title=&quot;10.代码块&quot;&gt;&lt;/a&gt;10.代码块&lt;/h6&gt;&lt;p&gt;tab + 四个空格&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;这是代码快第一行
-这是第二行
-&lt;/code&gt;&lt;/pre&gt;</content>
+&lt;h6 id=&quot;10-代码块&quot;&gt;&lt;a href=&quot;#10-代码块&quot; class=&quot;headerlink&quot; title=&quot;10.代码块&quot;&gt;&lt;/a&gt;10.代码块&lt;/h6&gt;&lt;p&gt;上下用三个`包起来就是一个代码块&lt;br&gt;例如&lt;br&gt;&lt;figure class=&quot;highlight arduino&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;&quot;这是一个代码块&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+</content>
     
     <summary type="html">
     

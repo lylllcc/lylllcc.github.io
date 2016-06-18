@@ -1,219 +1,452 @@
-<!DOCTYPE html>
-<html>
+
+ <!DOCTYPE HTML>
+<html >
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   
-  <title>开始我的大linux生活 | Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="为什么要开始我的大linux生活呢？
-也就前几天吧，想整个双系统玩玩的然后在我的电脑上割了一块盘出来然后妆上了大fedora，然后吧也没啥幺蛾子的问题出现。用着也听爽的。因为刚装完fedora开机就是他第一个启动，好像也就5秒的选系统时间,(当时我还是深深的爱着我的电脑上的win10系统的)我想把默认的开机启动顺序改一下，网上找的有个东西叫easybcd，据说是很好用的。。。。。或许吧。
-一不小心">
+    <title>开始我的大linux生活 | Hexo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="yyljj">
+    
+
+    
+    <meta name="description" content="为什么要开始我的大linux生活呢？
+也就前几天吧，想整个双系统玩玩的然后在我的电脑上割了一块盘出来然后妆上了大fedora，然后吧也没啥幺蛾子的问题出现。用着也听爽的。因为刚装完fedora开机就是他第一个启动，好像也就5秒的选系统时间,(当时我还是深深的爱着我的电脑上的win10系统的)我想把默认的开机启动顺序改一下，网上找的有个东西叫">
 <meta property="og:type" content="article">
 <meta property="og:title" content="开始我的大linux生活">
 <meta property="og:url" content="http://yoursite.com/2016/06/05/开始我的大linux生活/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="为什么要开始我的大linux生活呢？
-也就前几天吧，想整个双系统玩玩的然后在我的电脑上割了一块盘出来然后妆上了大fedora，然后吧也没啥幺蛾子的问题出现。用着也听爽的。因为刚装完fedora开机就是他第一个启动，好像也就5秒的选系统时间,(当时我还是深深的爱着我的电脑上的win10系统的)我想把默认的开机启动顺序改一下，网上找的有个东西叫easybcd，据说是很好用的。。。。。或许吧。
-一不小心">
-<meta property="og:updated_time" content="2016-06-18T03:14:39.664Z">
+也就前几天吧，想整个双系统玩玩的然后在我的电脑上割了一块盘出来然后妆上了大fedora，然后吧也没啥幺蛾子的问题出现。用着也听爽的。因为刚装完fedora开机就是他第一个启动，好像也就5秒的选系统时间,(当时我还是深深的爱着我的电脑上的win10系统的)我想把默认的开机启动顺序改一下，网上找的有个东西叫">
+<meta property="og:updated_time" content="2016-06-18T12:34:01.160Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="开始我的大linux生活">
 <meta name="twitter:description" content="为什么要开始我的大linux生活呢？
-也就前几天吧，想整个双系统玩玩的然后在我的电脑上割了一块盘出来然后妆上了大fedora，然后吧也没啥幺蛾子的问题出现。用着也听爽的。因为刚装完fedora开机就是他第一个启动，好像也就5秒的选系统时间,(当时我还是深深的爱着我的电脑上的win10系统的)我想把默认的开机启动顺序改一下，网上找的有个东西叫easybcd，据说是很好用的。。。。。或许吧。
-一不小心">
-  
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  <link rel="stylesheet" href="/css/style.css">
-  
+也就前几天吧，想整个双系统玩玩的然后在我的电脑上割了一块盘出来然后妆上了大fedora，然后吧也没啥幺蛾子的问题出现。用着也听爽的。因为刚装完fedora开机就是他第一个启动，好像也就5秒的选系统时间,(当时我还是深深的爱着我的电脑上的win10系统的)我想把默认的开机启动顺序改一下，网上找的有个东西叫">
 
+    
+    <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
+  <body>
+    <header>
       
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
-      </div>
-    </div>
-  </div>
+<div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="Hexo" title="Hexo"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="Hexo">Hexo</a></h1>
+				<h2 class="blog-motto"></h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">Home</a></li>
+					
+						<li><a href="/archives">Archives</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" name="q" autocomplete="off" maxlength="20" placeholder="搜索" />
+						<input type="hidden" name="q" value="site:yoursite.com">
+					</form>
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2016/06/05/开始我的大linux生活/" title="开始我的大linux生活" itemprop="url">开始我的大linux生活</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="yyljj" target="_blank" itemprop="author">yyljj</a>
+		
+  <p class="article-time">
+    <time datetime="2016-06-05T05:57:39.000Z" itemprop="datePublished"> 发表于 2016-06-05</time>
+    
+  </p>
 </header>
-      <div class="outer">
-        <section id="main"><article id="post-开始我的大linux生活" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/06/05/开始我的大linux生活/" class="article-date">
-  <time datetime="2016-06-05T05:57:39.000Z" itemprop="datePublished">2016-06-05</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/闲谈/">闲谈</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      开始我的大linux生活
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>为什么要开始我的大linux生活呢？</p>
-<p>也就前几天吧，想整个双系统玩玩的然后在我的电脑上割了一块盘出来然后妆上了大fedora，然后吧也没啥<br>幺蛾子的问题出现。用着也听爽的。因为刚装完fedora开机就是他第一个启动，好像也就5秒的选系统时间,<br>(当时我还是深深的爱着我的电脑上的win10系统的)我想把默认的开机启动顺序改一下，网上找的有个东西叫<br>easybcd，据说是很好用的。。。。。或许吧。</p>
-<p>一不小心easybcd删掉了windows的开机引导。。。win进不去。。。<br>想办法修啊，重装都是不是办法的办法。。找到了两种办法可是都没用。。没办法只好重装win10了(谁让我<br>当时还是深爱着她)把整个盘都格式化了然后装上了windows，然后一下午加一晚上在配开发环境，那个网速<br>啊，慢的要死，终于到晚上9点左右环境勉强算配好了。于是开始我就又开始我的双系统生活了。还是装上了<br>大fedora，快装好的时候，某人找我去搬桌子。。。</p>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目录</strong>
+		
+			
+		
+		</div>
+		
+		<p>为什么要开始我的大linux生活呢？</p>
+<p>也就前几天吧，想整个双系统玩玩的然后在我的电脑上割了一块盘出来然后妆上了大fedora，然后吧也没啥<br>幺蛾子的问题出现。用着也听爽的。因为刚装完fedora开机就是他第一个启动，好像也就5秒的选系统时间,<br>(当时我还是深深的爱着我的电脑上的win10系统的)我想把默认的开机启动顺序改一下，网上找的有个东西叫<a id="more"></a><br>easybcd，据说是很好用的。。。。。或许吧。<br>一不小心easybcd删掉了windows的开机引导。。。win进不去。。。<br>想办法修啊，重装都是不是办法的办法。。找到了两种办法可是都没用。。没办法只好重装win10了(谁让我<br>当时还是深爱着她)把整个盘都格式化了然后装上了windows，然后一下午加一晚上在配开发环境，那个网速<br>啊，慢的要死，终于到晚上9点左右环境勉强算配好了。于是开始我就又开始我的双系统生活了。还是装上了<br>大fedora，快装好的时候，某人找我去搬桌子。。。</p>
 <p>我就离开了一小会好吧。。。然后回来安装完成了，重启之后两个系统的开机引导都没了。。fuck。。一下午<br>加一晚上相当于屁也没弄。。然后我各种修复啊，linux还好用live进去一条命令就修好了。windows要命弄<br>不好，什么pe进去用工具，用镜像修，用镜像引导都试过了。fuck，fuck，fuck！！！</p>
 <p>前前后后在自己的电脑上整双操作系统不下于五次了吧，从来也没遇到过这么坑爹的事情。</p>
 <p>。。。。</p>
 <p>呸，我的一下午加一晚上，我都没学习啊，装电脑fuck啊。</p>
 <p>老夫再也不在自己电脑上装windows了。。。</p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
 
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/06/05/开始我的大linux生活/" data-id="cipkw9mji0002nctiwwnmkgfg" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-    
-<nav id="article-nav">
-  
-    <a href="/2016/06/05/linux开发环境搭建/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          linux开发环境搭建
-        
-      </div>
-    </a>
-  
-  
-</nav>
-
-  
-</article>
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Categories</h3>
-    <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/linux/">linux</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/闲谈/">闲谈</a></li></ul>
-    </div>
-  </div>
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/闲谈/">闲谈</a>
+</div>
 
 
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">June 2016</a></li></ul>
-    </div>
-  </div>
+</div>
 
 
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2016/06/18/hello-world/">Hello World</a>
-          </li>
-        
-          <li>
-            <a href="/2016/06/05/linux开发环境搭建/">linux开发环境搭建</a>
-          </li>
-        
-          <li>
-            <a href="/2016/06/05/开始我的大linux生活/">开始我的大linux生活</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
 
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2016 John Doe<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
+	<div class="article-share" id="share">
+	
+	  <div data-url="http://yoursite.com/2016/06/05/开始我的大linux生活/" data-title="开始我的大linux生活 | Hexo" data-tsina="null" class="share clearfix">
+	  </div>
+	
+	</div>
+
+
 </footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
+
+   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev" >
+ <a href="/2016/06/05/linux开发环境搭建/" title="linux开发环境搭建">
+  <strong>上一篇：</strong><br/>
+  <span>
+  linux开发环境搭建</span>
+</a>
+</div>
+
+
 </nav>
-    
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	
 
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
 
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  <script src="/fancybox/jquery.fancybox.pack.js"></script>
-
-
-<script src="/js/script.js"></script>
-
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目录</strong>
+ 
+ 
+ 
   </div>
-</body>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
+<aside class="clearfix">
+
+  
+
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">分类</p>
+		<ul>
+		
+		  
+			<li><a href="/categories/linux/" title="linux">linux<sup>1</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/闲谈/" title="闲谈">闲谈<sup>1</sup></a></li>
+		  
+		
+		</ul>
+</div>
+
+
+  
+
+  <div class="linkslist">
+  <p class="asidetitle">友情链接</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="https://coderq.com" target="_blank" title="一个面向程序员交流分享的新一代社区">码农圈</a>
+            
+          </li>
+        
+          <li>
+            
+            	<a href="http://wuchong.me" target="_blank" title="Jark&#39;s Blog">Jark&#39;s Blog</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS 订阅</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hello ,I&#39;m Larry Page in Google. <br/>
+			This is my blog,believe it or not.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		<a href="http://weibo.com/2176287895" target="_blank" class="icon-weibo" title="微博"></a>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2016 
+		
+		<a href="/about" target="_blank" title="yyljj">yyljj</a>
+		
+		
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  });
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+  $('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});   
+</script>
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?e6d1f421bbc9962127a50488f9ed37d1";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="返回顶部"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+  </body>
 </html>

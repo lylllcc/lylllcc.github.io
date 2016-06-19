@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Hexo</title>
+
+  <link href="/atom.xml" rel="self"/>
+
+  <link href="http://yoursite.com/"/>
+  <updated>2016-06-19T00:51:53.364Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>yyljj</name>
+
+  </author>
+
+  <generator uri="http://hexo.io/">Hexo</generator>
+
+  <entry>
+    <title>linux开发环境搭建</title>
+    <link href="http://yoursite.com/2016/06/05/linux%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
+    <id>http://yoursite.com/2016/06/05/linux开发环境搭建/</id>
+    <published>2016-06-05T15:16:19.000Z</published>
+    <updated>2016-06-19T00:51:53.364Z</updated>
+
+    <content type="html">&lt;p&gt;以下记录我在linux系统下搭建开发环境的时候所安装的软件，防止哪天重装系统的时候不知道该装点啥软件&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;科学上网&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/shadowsocks/shadowsocks-qt5/wiki/%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;shadowsocks&lt;/a&gt;小飞机&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;终端强化工具zsh(强烈推荐)&lt;/p&gt;
+ &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sudo dnf install zsh&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+ &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;p&gt; 这是有人写好的配置文件&lt;a href=&quot;https://github.com/robbyrussell/oh-my-zsh&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;oh-my-zsh&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;浏览器&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.google.com/chrome/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;google-chrome&lt;/a&gt;(强烈推荐，虽然比较吃内存，但真的很强大)&lt;/li&gt;
+&lt;li&gt;firefox&lt;br&gt; linux一般都自带吧。下载插件foxyproxy配合小飞机使用更佳。&lt;br&gt; 代理的话我的谷歌可以直接用系统代理，火狐不能我也不知道为啥。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;输入法&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;redhat的一般都自带智能拼音。&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;搜狗拼音&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;http://pinyin.sogou.com/linux/?r=pinyin&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;deb包&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;rpm&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sudo dnf config-manager --add-repo=http://repo.fdzh.org/FZUG/FZUG.repo&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;sudo dnf install fzug-release -y&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;sudo dnf install sogoupinyin sogoupinyin-selinux -y&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;安装之后需要重启&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ reboot&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;文本编辑器&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;https://atom.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;atom&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://www.sublimetext.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;sublime&lt;/a&gt;在linux下无法切换中文输入法，虽然有办法可以解决但还是用现成的吧。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;IDE&lt;br&gt; java:&lt;a href=&quot;https://www.jetbrains.com/idea/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;idea&lt;/a&gt;&lt;br&gt; php: &lt;a href=&quot;https://www.jetbrains.com/phpstorm/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;phpstrom&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;启动器&lt;br&gt; 实在觉的unity的启动器太丑了&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;docky&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sudo dnf install docky&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;开发环境&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;以后再补充&lt;/p&gt;
+</content>
+
+    <summary type="html">
+
+      &lt;p&gt;以下记录我在linux系统下搭建开发环境的时候所安装的软件，防止哪天重装系统的时候不知道该装点啥软件&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;科学上网&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/shadowsocks/shadowsocks-qt5/wiki/%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97&quot;&gt;shadowsocks&lt;/a&gt;小飞机&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;终端强化工具zsh(强烈推荐)&lt;/p&gt;
+ &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sudo dnf install zsh&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+    </summary>
+
+      <category term="linux" scheme="http://yoursite.com/categories/linux/"/>
+
+
+  </entry>
+
+  <entry>
+    <title>开始我的大linux生活</title>
+    <link href="http://yoursite.com/2016/06/05/%E5%BC%80%E5%A7%8B%E6%88%91%E7%9A%84%E5%A4%A7linux%E7%94%9F%E6%B4%BB/"/>
+    <id>http://yoursite.com/2016/06/05/开始我的大linux生活/</id>
+    <published>2016-06-05T05:57:39.000Z</published>
+    <updated>2016-06-18T12:34:01.160Z</updated>
+
+    <content type="html">&lt;p&gt;为什么要开始我的大linux生活呢？&lt;/p&gt;
+&lt;p&gt;也就前几天吧，想整个双系统玩玩的然后在我的电脑上割了一块盘出来然后妆上了大fedora，然后吧也没啥&lt;br&gt;幺蛾子的问题出现。用着也听爽的。因为刚装完fedora开机就是他第一个启动，好像也就5秒的选系统时间,&lt;br&gt;(当时我还是深深的爱着我的电脑上的win10系统的)我想把默认的开机启动顺序改一下，网上找的有个东西叫&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;br&gt;easybcd，据说是很好用的。。。。。或许吧。&lt;br&gt;一不小心easybcd删掉了windows的开机引导。。。win进不去。。。&lt;br&gt;想办法修啊，重装都是不是办法的办法。。找到了两种办法可是都没用。。没办法只好重装win10了(谁让我&lt;br&gt;当时还是深爱着她)把整个盘都格式化了然后装上了windows，然后一下午加一晚上在配开发环境，那个网速&lt;br&gt;啊，慢的要死，终于到晚上9点左右环境勉强算配好了。于是开始我就又开始我的双系统生活了。还是装上了&lt;br&gt;大fedora，快装好的时候，某人找我去搬桌子。。。&lt;/p&gt;
+&lt;p&gt;我就离开了一小会好吧。。。然后回来安装完成了，重启之后两个系统的开机引导都没了。。fuck。。一下午&lt;br&gt;加一晚上相当于屁也没弄。。然后我各种修复啊，linux还好用live进去一条命令就修好了。windows要命弄&lt;br&gt;不好，什么pe进去用工具，用镜像修，用镜像引导都试过了。fuck，fuck，fuck！！！&lt;/p&gt;
+&lt;p&gt;前前后后在自己的电脑上整双操作系统不下于五次了吧，从来也没遇到过这么坑爹的事情。&lt;/p&gt;
+&lt;p&gt;。。。。&lt;/p&gt;
+&lt;p&gt;呸，我的一下午加一晚上，我都没学习啊，装电脑fuck啊。&lt;/p&gt;
+&lt;p&gt;老夫再也不在自己电脑上装windows了。。。&lt;/p&gt;
+</content>
+
+    <summary type="html">
+
+      &lt;p&gt;为什么要开始我的大linux生活呢？&lt;/p&gt;
+&lt;p&gt;也就前几天吧，想整个双系统玩玩的然后在我的电脑上割了一块盘出来然后妆上了大fedora，然后吧也没啥&lt;br&gt;幺蛾子的问题出现。用着也听爽的。因为刚装完fedora开机就是他第一个启动，好像也就5秒的选系统时间,&lt;br&gt;(当时我还是深深的爱着我的电脑上的win10系统的)我想把默认的开机启动顺序改一下，网上找的有个东西叫
+
+    </summary>
+
+      <category term="闲谈" scheme="http://yoursite.com/categories/%E9%97%B2%E8%B0%88/"/>
+
+
+  </entry>
+
+</feed>

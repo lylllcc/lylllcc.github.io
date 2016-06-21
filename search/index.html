@@ -1,10 +1,10 @@
 
-  <!DOCTYPE HTML>
+<!DOCTYPE HTML>
 <html >
 <head>
   <meta charset="UTF-8">
   
-    <title>Archives | Hexo</title>
+    <title>search | Hexo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="yyljj">
@@ -13,12 +13,13 @@
     
     <meta name="description">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+<meta property="og:title" content="search">
+<meta property="og:url" content="http://yoursite.com/search/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description">
+<meta property="og:updated_time" content="2016-06-21T09:17:26.416Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="search">
 <meta name="twitter:description">
 
     
@@ -71,47 +72,26 @@
       </header>
       <div id="container">
         
-
-<div class="archive-title" >
-  <h2 class="archive-icon">Archives</h2>
-  
-  <div class="archiveslist archive-float clearfix">
-   <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">Jun 2016</a><span class="archive-list-count">2</span></li></ul>
- </div>
-  
+<div  id="main" class="page">
+  <div id='cse' style='width:100%;text-align:center'>正在加载搜索结果，请稍等。</div>
 </div>
-<div id="main" class="archive-part clearfix">
-  <div id="archive-page">
+<script src="http://www.google.com.hk/jsapi" type="text/javascript"></script>
+<script type="text/javascript">
+google.load('search', '1', {language : 'zh-CN',style: google.loader.themes.MINIMALIST});
+google.setOnLoadCallback(function(){
+  var customSearchControl = new google.search.CustomSearchControl('007619593471952863322');
+  customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+  var options = new google.search.DrawOptions();
+  options.setAutoComplete(true);
+  customSearchControl.draw('cse', options);
+  var match = location.search.match(/q=([^&]*)(&|$)/);
+  if(match && match[1]){
+    var search = decodeURIComponent(match[1]);
+    customSearchControl.execute(search);
+  }
+},true);
+</script>
 
-  <section class="post" itemscope itemprop="blogPost">
-  
-    <a href="/2016/06/05/linux开发环境搭建/" title="linux开发环境搭建" itemprop="url">
-  
-
-    <time datetime="2016-06-05T15:16:19.000Z" itemprop="datePublished">2016-06-05</time>
-
-
-    <h1 itemprop="name">linux开发环境搭建</h1>
-
-  </a>
-</section>
-
-  <section class="post" itemscope itemprop="blogPost">
-  
-    <a href="/2016/06/05/开始我的大linux生活/" title="开始我的大linux生活" itemprop="url">
-  
-
-    <time datetime="2016-06-05T05:57:39.000Z" itemprop="datePublished">2016-06-05</time>
-
-
-    <h1 itemprop="name">开始我的大linux生活</h1>
-
-  </a>
-</section>
-
-
-  </div>
-</div>
 
       </div>
       <footer><div id="footer" >
@@ -190,6 +170,18 @@ $(document).ready(function(){
 
 
 
+
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"yyljj"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script> 
 
 
 

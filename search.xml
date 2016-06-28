@@ -5,7 +5,7 @@
     
     <entry>
       <title><![CDATA[linux开发环境搭建]]></title>
-      <url>http://yoursite.com/2016/06/05/linux%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</url>
+      <url>http://jaxlying.github.io/2016/06/05/linux%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</url>
       <content type="html"><![CDATA[<p>以下记录我在linux系统下搭建开发环境的时候所安装的软件，防止哪天重装系统的时候不知道该装点啥软件</p>
 <ol>
 <li>科学上网<ol>
@@ -58,7 +58,7 @@
     
     <entry>
       <title><![CDATA[开始我的大linux生活]]></title>
-      <url>http://yoursite.com/2016/06/05/%E5%BC%80%E5%A7%8B%E6%88%91%E7%9A%84%E5%A4%A7linux%E7%94%9F%E6%B4%BB/</url>
+      <url>http://jaxlying.github.io/2016/06/05/%E5%BC%80%E5%A7%8B%E6%88%91%E7%9A%84%E5%A4%A7linux%E7%94%9F%E6%B4%BB/</url>
       <content type="html"><![CDATA[<p>为什么要开始我的大linux生活呢？</p>
 <p>也就前几天吧，想整个双系统玩玩的然后在我的电脑上割了一块盘出来然后妆上了大fedora，然后吧也没啥<br>幺蛾子的问题出现。用着也听爽的。因为刚装完fedora开机就是他第一个启动，好像也就5秒的选系统时间,<br>(当时我还是深深的爱着我的电脑上的win10系统的)我想把默认的开机启动顺序改一下，网上找的有个东西叫<a id="more"></a><br>easybcd，据说是很好用的。。。。。或许吧。<br>一不小心easybcd删掉了windows的开机引导。。。win进不去。。。<br>想办法修啊，重装都是不是办法的办法。。找到了两种办法可是都没用。。没办法只好重装win10了(谁让我<br>当时还是深爱着她)把整个盘都格式化了然后装上了windows，然后一下午加一晚上在配开发环境，那个网速<br>啊，慢的要死，终于到晚上9点左右环境勉强算配好了。于是开始我就又开始我的双系统生活了。还是装上了<br>大fedora，快装好的时候，某人找我去搬桌子。。。</p>
 <p>我就离开了一小会好吧。。。然后回来安装完成了，重启之后两个系统的开机引导都没了。。fuck。。一下午<br>加一晚上相当于屁也没弄。。然后我各种修复啊，linux还好用live进去一条命令就修好了。windows要命弄<br>不好，什么pe进去用工具，用镜像修，用镜像引导都试过了。fuck，fuck，fuck！！！</p>

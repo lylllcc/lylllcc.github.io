@@ -4,9 +4,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="http://jaxlying.github.io/"/>
   <updated>2016-06-19T00:51:53.364Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>http://jaxlying.github.io/</id>
   
   <author>
     <name>Jaxlying</name>
@@ -17,8 +17,8 @@
   
   <entry>
     <title>linux开发环境搭建</title>
-    <link href="http://yoursite.com/2016/06/05/linux%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
-    <id>http://yoursite.com/2016/06/05/linux开发环境搭建/</id>
+    <link href="http://jaxlying.github.io/2016/06/05/linux%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
+    <id>http://jaxlying.github.io/2016/06/05/linux开发环境搭建/</id>
     <published>2016-06-05T15:16:19.000Z</published>
     <updated>2016-06-19T00:51:53.364Z</updated>
     
@@ -84,15 +84,15 @@
     
     </summary>
     
-      <category term="linux" scheme="http://yoursite.com/categories/linux/"/>
+      <category term="linux" scheme="http://jaxlying.github.io/categories/linux/"/>
     
     
   </entry>
   
   <entry>
     <title>开始我的大linux生活</title>
-    <link href="http://yoursite.com/2016/06/05/%E5%BC%80%E5%A7%8B%E6%88%91%E7%9A%84%E5%A4%A7linux%E7%94%9F%E6%B4%BB/"/>
-    <id>http://yoursite.com/2016/06/05/开始我的大linux生活/</id>
+    <link href="http://jaxlying.github.io/2016/06/05/%E5%BC%80%E5%A7%8B%E6%88%91%E7%9A%84%E5%A4%A7linux%E7%94%9F%E6%B4%BB/"/>
+    <id>http://jaxlying.github.io/2016/06/05/开始我的大linux生活/</id>
     <published>2016-06-05T05:57:39.000Z</published>
     <updated>2016-06-18T12:34:01.160Z</updated>
     
@@ -112,7 +112,7 @@
     
     </summary>
     
-      <category term="闲谈" scheme="http://yoursite.com/categories/%E9%97%B2%E8%B0%88/"/>
+      <category term="闲谈" scheme="http://jaxlying.github.io/categories/%E9%97%B2%E8%B0%88/"/>
     
     
   </entry>

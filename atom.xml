@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Hexo</title>
-
+  
   <link href="/atom.xml" rel="self"/>
-
+  
   <link href="http://yoursite.com/"/>
   <updated>2016-06-19T00:51:53.364Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
-    <name>yyljj</name>
-
+    <name>Jaxlying</name>
+    
   </author>
-
+  
   <generator uri="http://hexo.io/">Hexo</generator>
-
+  
   <entry>
     <title>linux开发环境搭建</title>
     <link href="http://yoursite.com/2016/06/05/linux%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
     <id>http://yoursite.com/2016/06/05/linux开发环境搭建/</id>
     <published>2016-06-05T15:16:19.000Z</published>
     <updated>2016-06-19T00:51:53.364Z</updated>
-
+    
     <content type="html">&lt;p&gt;以下记录我在linux系统下搭建开发环境的时候所安装的软件，防止哪天重装系统的时候不知道该装点啥软件&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;科学上网&lt;ol&gt;
@@ -70,9 +70,9 @@
 &lt;/ol&gt;
 &lt;p&gt;以后再补充&lt;/p&gt;
 </content>
-
+    
     <summary type="html">
-
+    
       &lt;p&gt;以下记录我在linux系统下搭建开发环境的时候所安装的软件，防止哪天重装系统的时候不知道该装点啥软件&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;科学上网&lt;ol&gt;
@@ -81,21 +81,21 @@
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;终端强化工具zsh(强烈推荐)&lt;/p&gt;
  &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sudo dnf install zsh&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
+    
     </summary>
-
+    
       <category term="linux" scheme="http://yoursite.com/categories/linux/"/>
-
-
+    
+    
   </entry>
-
+  
   <entry>
     <title>开始我的大linux生活</title>
     <link href="http://yoursite.com/2016/06/05/%E5%BC%80%E5%A7%8B%E6%88%91%E7%9A%84%E5%A4%A7linux%E7%94%9F%E6%B4%BB/"/>
     <id>http://yoursite.com/2016/06/05/开始我的大linux生活/</id>
     <published>2016-06-05T05:57:39.000Z</published>
     <updated>2016-06-18T12:34:01.160Z</updated>
-
+    
     <content type="html">&lt;p&gt;为什么要开始我的大linux生活呢？&lt;/p&gt;
 &lt;p&gt;也就前几天吧，想整个双系统玩玩的然后在我的电脑上割了一块盘出来然后妆上了大fedora，然后吧也没啥&lt;br&gt;幺蛾子的问题出现。用着也听爽的。因为刚装完fedora开机就是他第一个启动，好像也就5秒的选系统时间,&lt;br&gt;(当时我还是深深的爱着我的电脑上的win10系统的)我想把默认的开机启动顺序改一下，网上找的有个东西叫&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;br&gt;easybcd，据说是很好用的。。。。。或许吧。&lt;br&gt;一不小心easybcd删掉了windows的开机引导。。。win进不去。。。&lt;br&gt;想办法修啊，重装都是不是办法的办法。。找到了两种办法可是都没用。。没办法只好重装win10了(谁让我&lt;br&gt;当时还是深爱着她)把整个盘都格式化了然后装上了windows，然后一下午加一晚上在配开发环境，那个网速&lt;br&gt;啊，慢的要死，终于到晚上9点左右环境勉强算配好了。于是开始我就又开始我的双系统生活了。还是装上了&lt;br&gt;大fedora，快装好的时候，某人找我去搬桌子。。。&lt;/p&gt;
 &lt;p&gt;我就离开了一小会好吧。。。然后回来安装完成了，重启之后两个系统的开机引导都没了。。fuck。。一下午&lt;br&gt;加一晚上相当于屁也没弄。。然后我各种修复啊，linux还好用live进去一条命令就修好了。windows要命弄&lt;br&gt;不好，什么pe进去用工具，用镜像修，用镜像引导都试过了。fuck，fuck，fuck！！！&lt;/p&gt;
@@ -104,17 +104,17 @@
 &lt;p&gt;呸，我的一下午加一晚上，我都没学习啊，装电脑fuck啊。&lt;/p&gt;
 &lt;p&gt;老夫再也不在自己电脑上装windows了。。。&lt;/p&gt;
 </content>
-
+    
     <summary type="html">
-
+    
       &lt;p&gt;为什么要开始我的大linux生活呢？&lt;/p&gt;
 &lt;p&gt;也就前几天吧，想整个双系统玩玩的然后在我的电脑上割了一块盘出来然后妆上了大fedora，然后吧也没啥&lt;br&gt;幺蛾子的问题出现。用着也听爽的。因为刚装完fedora开机就是他第一个启动，好像也就5秒的选系统时间,&lt;br&gt;(当时我还是深深的爱着我的电脑上的win10系统的)我想把默认的开机启动顺序改一下，网上找的有个东西叫
-
+    
     </summary>
-
+    
       <category term="闲谈" scheme="http://yoursite.com/categories/%E9%97%B2%E8%B0%88/"/>
-
-
+    
+    
   </entry>
-
+  
 </feed>

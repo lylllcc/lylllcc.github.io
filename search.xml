@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+    
+    <entry>
+      <title><![CDATA[linux开发环境搭建]]></title>
+      <url>http://yoursite.com/2016/06/05/linux%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</url>
+      <content type="html"><![CDATA[<p>以下记录我在linux系统下搭建开发环境的时候所安装的软件，防止哪天重装系统的时候不知道该装点啥软件</p>
+<ol>
+<li>科学上网<ol>
+<li><a href="https://github.com/shadowsocks/shadowsocks-qt5/wiki/%E5%AE%89%E8%A3%85%E6%8C%87%E5%8D%97" target="_blank" rel="external">shadowsocks</a>小飞机</li>
+</ol>
+</li>
+<li><p>终端强化工具zsh(强烈推荐)</p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo dnf install zsh</span><br></pre></td></tr></table></figure>
+ <a id="more"></a>
+<p> 这是有人写好的配置文件<a href="https://github.com/robbyrussell/oh-my-zsh" target="_blank" rel="external">oh-my-zsh</a></p>
+</li>
+<li>浏览器<ol>
+<li><a href="https://www.google.com/chrome/" target="_blank" rel="external">google-chrome</a>(强烈推荐，虽然比较吃内存，但真的很强大)</li>
+<li>firefox<br> linux一般都自带吧。下载插件foxyproxy配合小飞机使用更佳。<br> 代理的话我的谷歌可以直接用系统代理，火狐不能我也不知道为啥。</li>
+</ol>
+</li>
+<li><p>输入法</p>
+<ol>
+<li>redhat的一般都自带智能拼音。</li>
+<li><p>搜狗拼音</p>
+<ol>
+<li><a href="http://pinyin.sogou.com/linux/?r=pinyin" target="_blank" rel="external">deb包</a></li>
+<li>rpm<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo dnf config-manager --add-repo=http://repo.fdzh.org/FZUG/FZUG.repo</span><br><span class="line">sudo dnf install fzug-release -y</span><br><span class="line">sudo dnf install sogoupinyin sogoupinyin-selinux -y</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>安装之后需要重启</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ reboot</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+</li>
+<li><p>文本编辑器</p>
+<ol>
+<li><a href="https://atom.io/" target="_blank" rel="external">atom</a><br><a href="https://www.sublimetext.com/" target="_blank" rel="external">sublime</a>在linux下无法切换中文输入法，虽然有办法可以解决但还是用现成的吧。</li>
+</ol>
+</li>
+<li><p>IDE<br> java:<a href="https://www.jetbrains.com/idea/" target="_blank" rel="external">idea</a><br> php: <a href="https://www.jetbrains.com/phpstorm/" target="_blank" rel="external">phpstrom</a></p>
+</li>
+<li><p>启动器<br> 实在觉的unity的启动器太丑了</p>
+<ol>
+<li>docky<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo dnf install docky</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+</li>
+<li><p>开发环境</p>
+</li>
+</ol>
+<p>以后再补充</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[开始我的大linux生活]]></title>
+      <url>http://yoursite.com/2016/06/05/%E5%BC%80%E5%A7%8B%E6%88%91%E7%9A%84%E5%A4%A7linux%E7%94%9F%E6%B4%BB/</url>
+      <content type="html"><![CDATA[<p>为什么要开始我的大linux生活呢？</p>
+<p>也就前几天吧，想整个双系统玩玩的然后在我的电脑上割了一块盘出来然后妆上了大fedora，然后吧也没啥<br>幺蛾子的问题出现。用着也听爽的。因为刚装完fedora开机就是他第一个启动，好像也就5秒的选系统时间,<br>(当时我还是深深的爱着我的电脑上的win10系统的)我想把默认的开机启动顺序改一下，网上找的有个东西叫<a id="more"></a><br>easybcd，据说是很好用的。。。。。或许吧。<br>一不小心easybcd删掉了windows的开机引导。。。win进不去。。。<br>想办法修啊，重装都是不是办法的办法。。找到了两种办法可是都没用。。没办法只好重装win10了(谁让我<br>当时还是深爱着她)把整个盘都格式化了然后装上了windows，然后一下午加一晚上在配开发环境，那个网速<br>啊，慢的要死，终于到晚上9点左右环境勉强算配好了。于是开始我就又开始我的双系统生活了。还是装上了<br>大fedora，快装好的时候，某人找我去搬桌子。。。</p>
+<p>我就离开了一小会好吧。。。然后回来安装完成了，重启之后两个系统的开机引导都没了。。fuck。。一下午<br>加一晚上相当于屁也没弄。。然后我各种修复啊，linux还好用live进去一条命令就修好了。windows要命弄<br>不好，什么pe进去用工具，用镜像修，用镜像引导都试过了。fuck，fuck，fuck！！！</p>
+<p>前前后后在自己的电脑上整双操作系统不下于五次了吧，从来也没遇到过这么坑爹的事情。</p>
+<p>。。。。</p>
+<p>呸，我的一下午加一晚上，我都没学习啊，装电脑fuck啊。</p>
+<p>老夫再也不在自己电脑上装windows了。。。</p>
+]]></content>
+    </entry>
+    
+  
+  
+</search>

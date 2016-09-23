@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://jaxlying.github.io/"/>
-  <updated>2016-09-23T15:13:22.005Z</updated>
+  <updated>2016-09-23T15:56:55.331Z</updated>
   <id>http://jaxlying.github.io/</id>
   
   <author>
@@ -16,26 +16,30 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>开发工具包</title>
+    <title>开发环境</title>
     <link href="http://jaxlying.github.io/2016/09/23/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
     <id>http://jaxlying.github.io/2016/09/23/开发工具/</id>
     <published>2016-09-23T15:12:19.000Z</published>
-    <updated>2016-09-23T15:13:22.005Z</updated>
+    <updated>2016-09-23T15:56:55.331Z</updated>
     
-    <content type="html"><![CDATA[<p>记录一些个人常用的工具包</p>
+    <content type="html"><![CDATA[<p>因为一些原因可能会重装系统，每次找一些插件或配置都很麻烦。<br>所以我想写一篇文章总结一下各个软件的配置或插件，方便以后<br>捣鼓系统。（逃）</p>
+<ol>
+<li><a href="https://www.sublimetext.com/3" target="_blank" rel="external">sublimetext3</a><br><a href="https://packagecontrol.io/installation" target="_blank" rel="external">包管理器</a><br>主题: Colorsublime(直接用包管理器搜)下的Adventure_Time<br><a href="https://gist.github.com/Jaxlying/af368b7e7081d087ec2af558e74ef523" target="_blank" rel="external">配置</a><br><a href="https://github.com/Jaxlying/bs3-sublime-plugin" target="_blank" rel="external">bs3-sublime-plugin</a><br>markdown preview(包管理器下载)</li>
+</ol>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;记录一些个人常用的工具包&lt;/p&gt;
-
+      &lt;p&gt;因为一些原因可能会重装系统，每次找一些插件或配置都很麻烦。&lt;br&gt;所以我想写一篇文章总结一下各个软件的配置或插件，方便以后&lt;br&gt;捣鼓系统。（逃）&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.sublimetext.com/3&quot; target=&quot;_b
     
     </summary>
     
-      <category term="linux" scheme="http://jaxlying.github.io/categories/linux/"/>
+      <category term="dev" scheme="http://jaxlying.github.io/categories/dev/"/>
     
     
-      <category term="linux" scheme="http://jaxlying.github.io/tags/linux/"/>
+      <category term="dev" scheme="http://jaxlying.github.io/tags/dev/"/>
     
   </entry>
   

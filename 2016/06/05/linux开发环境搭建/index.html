@@ -110,7 +110,7 @@ lantern 蓝灯也不错。不用配置服务器。
 
 终端强化工具zsh(强烈推荐)
  1sudo dnf install zsh">
-<meta property="og:updated_time" content="2016-06-28T07:11:49.325Z">
+<meta property="og:updated_time" content="2016-09-23T13:35:46.858Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="linux开发环境搭建">
 <meta name="twitter:description" content="以下记录我在linux系统下搭建开发环境的时候所安装的软件，防止哪天重装系统的时候不知道该装点啥软件
@@ -384,7 +384,7 @@ lantern 蓝灯也不错。不用配置服务器。
 </ol>
 </li>
 <li><p>终端强化工具zsh(强烈推荐)</p>
- <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo dnf install zsh</span><br></pre></td></tr></table></figure>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo dnf install zsh</div></pre></td></tr></table></figure>
  <a id="more"></a>
 <p> 这是有人写好的配置文件<a href="https://github.com/robbyrussell/oh-my-zsh" target="_blank" rel="external">oh-my-zsh</a></p>
 </li>
@@ -399,11 +399,11 @@ lantern 蓝灯也不错。不用配置服务器。
 <li><p>搜狗拼音</p>
 <ol>
 <li><a href="http://pinyin.sogou.com/linux/?r=pinyin" target="_blank" rel="external">deb包</a></li>
-<li>rpm<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo dnf config-manager --add-repo=http://repo.fdzh.org/FZUG/FZUG.repo</span><br><span class="line">sudo dnf install fzug-release -y</span><br><span class="line">sudo dnf install sogoupinyin sogoupinyin-selinux -y</span><br></pre></td></tr></table></figure>
+<li>rpm<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">sudo dnf config-manager --add-repo=http://repo.fdzh.org/FZUG/FZUG.repo</div><div class="line">sudo dnf install fzug-release -y</div><div class="line">sudo dnf install sogoupinyin sogoupinyin-selinux -y</div></pre></td></tr></table></figure>
 </li>
 </ol>
 <p>安装之后需要重启</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ reboot</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ reboot</div></pre></td></tr></table></figure>
 </li>
 </ol>
 </li>
@@ -415,17 +415,17 @@ lantern 蓝灯也不错。不用配置服务器。
 <li>IDE<br> java:<a href="https://www.jetbrains.com/idea/" target="_blank" rel="external">idea</a><br> php: <a href="https://www.jetbrains.com/phpstorm/" target="_blank" rel="external">phpstrom</a><br> 暂时就用这两个</li>
 <li><p>启动器<br> 实在觉的unity的启动器太丑了</p>
 <ol>
-<li>docky<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo dnf install docky</span><br></pre></td></tr></table></figure>
+<li>docky<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo dnf install docky</div></pre></td></tr></table></figure>
 </li>
 </ol>
 </li>
 <li><p>前段开发环境</p>
 <ol>
 <li><p>下载编译安装最新的nodejs+npm</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">sudo wget http://nodejs.org/dist/node-latest.tar.gz</span><br><span class="line">sudo tar -zxvf node-latest.tar.gz</span><br><span class="line">sudo cd node-v*</span><br><span class="line">sudo ./configure</span><br><span class="line">sudo make</span><br><span class="line">sudo make install</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">sudo wget http://nodejs.org/dist/node-latest.tar.gz</div><div class="line">sudo tar -zxvf node-latest.tar.gz</div><div class="line">sudo cd node-v*</div><div class="line">sudo ./configure</div><div class="line">sudo make</div><div class="line">sudo make install</div></pre></td></tr></table></figure>
 </li>
 <li><p><a href="http://yeoman.io/" target="_blank" rel="external">yeoman</a></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo npm install -g yo generator-webapp gulp-cli grunt-cli</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo npm install -g yo generator-webapp gulp-cli grunt-cli</div></pre></td></tr></table></figure>
 <p>包括生成器脚手架</p>
 </li>
 </ol>
@@ -462,16 +462,12 @@ lantern 蓝灯也不错。不用配置服务器。
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/06/05/开始我的大linux生活/" rel="next" title="开始我的大linux生活">
-                <i class="fa fa-chevron-left"></i> 开始我的大linux生活
-              </a>
-            
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/06/28/py武林世界/" rel="prev" title="py武林世界">
-                py武林世界 <i class="fa fa-chevron-right"></i>
+              <a href="/2016/09/21/linux工具包/" rel="prev" title="linux工具包">
+                linux工具包 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -563,7 +559,7 @@ lantern 蓝灯也不错。不用配置服务器。
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/">
-              <span class="site-state-item-count">4</span>
+              <span class="site-state-item-count">3</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -571,7 +567,7 @@ lantern 蓝灯也不错。不用配置服务器。
           
             <div class="site-state-item site-state-categories">
               <a href="/categories">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">1</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -580,7 +576,7 @@ lantern 蓝灯也不错。不用配置服务器。
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-count">1</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>

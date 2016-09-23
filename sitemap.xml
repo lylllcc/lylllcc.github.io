@@ -2,65 +2,58 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://jaxlying.github.io/2016/07/03/oauth2.0/</loc>
+    <loc>http://jaxlying.github.io/2016/09/23/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/</loc>
     
-    <lastmod>2016-07-08T09:03:12.034Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://jaxlying.github.io//404.html</loc>
-    
-    <lastmod>2016-06-28T13:38:46.606Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://jaxlying.github.io/2016/06/28/py%E6%AD%A6%E6%9E%97%E4%B8%96%E7%95%8C/</loc>
-    
-    <lastmod>2016-06-28T07:34:45.888Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://jaxlying.github.io/2016/06/05/linux%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</loc>
-    
-    <lastmod>2016-06-28T07:11:49.325Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://jaxlying.github.io/2016/06/05/%E5%BC%80%E5%A7%8B%E6%88%91%E7%9A%84%E5%A4%A7linux%E7%94%9F%E6%B4%BB/</loc>
-    
-    <lastmod>2016-06-28T07:11:17.216Z</lastmod>
+    <lastmod>2016-09-23T15:13:22.005Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://jaxlying.github.io/tags/index.html</loc>
     
-    <lastmod>2016-06-28T07:06:17.025Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://jaxlying.github.io/messageboard/index.html</loc>
-    
-    <lastmod>2016-06-28T06:51:05.809Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://jaxlying.github.io/categories/index.html</loc>
-    
-    <lastmod>2016-06-28T06:49:50.760Z</lastmod>
+    <lastmod>2016-09-23T13:35:46.881Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://jaxlying.github.io/search/index.html</loc>
     
-    <lastmod>2016-06-21T09:17:26.416Z</lastmod>
+    <lastmod>2016-09-23T13:35:46.876Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://jaxlying.github.io/messageboard/index.html</loc>
+    
+    <lastmod>2016-09-23T13:35:46.871Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://jaxlying.github.io/categories/index.html</loc>
+    
+    <lastmod>2016-09-23T13:35:46.868Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://jaxlying.github.io/2016/06/05/linux%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</loc>
+    
+    <lastmod>2016-09-23T13:35:46.858Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://jaxlying.github.io/2016/09/21/linux%E5%B7%A5%E5%85%B7%E5%8C%85/</loc>
+    
+    <lastmod>2016-09-23T13:35:46.852Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://jaxlying.github.io//404.html</loc>
+    
+    <lastmod>2016-09-23T13:35:46.845Z</lastmod>
     
   </url>
   

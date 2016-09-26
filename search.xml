@@ -5,10 +5,10 @@
     
     <entry>
       <title><![CDATA[开发环境]]></title>
-      <url>http://jaxlying.github.io/2016/09/23/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/</url>
-      <content type="html"><![CDATA[<p>因为一些原因可能会重装系统，每次找一些插件或配置都很麻烦。<br>所以我想写一篇文章总结一下各个软件的配置或插件，方便以后<br>捣鼓系统。（逃）</p>
+      <url>http://jaxlying.github.io/2016/09/26/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/</url>
+      <content type="html"><![CDATA[<p>因为一些原因可能会重装系统，每次找一些插件或配置都很麻烦。所以我想写一篇文章总结<br>下各个软件的配置或插件，方便以后捣鼓系统。（逃）<br><a id="more"></a></p>
 <ol>
-<li><a href="https://www.sublimetext.com/3" target="_blank" rel="external">sublimetext3</a><br><a href="https://packagecontrol.io/installation" target="_blank" rel="external">包管理器</a><br>主题: Colorsublime(直接用包管理器搜)下的Adventure_Time<br><a href="https://gist.github.com/Jaxlying/af368b7e7081d087ec2af558e74ef523" target="_blank" rel="external">配置</a><br><a href="https://github.com/Jaxlying/bs3-sublime-plugin" target="_blank" rel="external">bs3-sublime-plugin</a><br>markdown preview(包管理器下载)</li>
+<li><a href="https://www.sublimetext.com/3" target="_blank" rel="external">sublimetext3</a><br> <a href="https://packagecontrol.io/installation" target="_blank" rel="external">包管理器</a><br> 主题: Colorsublime(直接用包管理器搜)下的Adventure_Time<br> markdown preview(包管理器下载)<br> <a href="https://github.com/Jaxlying/bs3-sublime-plugin" target="_blank" rel="external">bs3-sublime-plugin</a><br> <a href="https://gist.github.com/Jaxlying/af368b7e7081d087ec2af558e74ef523" target="_blank" rel="external">配置</a><br> <a href="https://gist.github.com/Jaxlying/787c005754bbe3fccec8c95cfe49ba25" target="_blank" rel="external">快捷键</a></li>
 </ol>
 ]]></content>
     </entry>

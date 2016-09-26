@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://jaxlying.github.io/"/>
-  <updated>2016-09-23T15:56:55.331Z</updated>
+  <updated>2016-09-26T11:04:29.154Z</updated>
   <id>http://jaxlying.github.io/</id>
   
   <author>
@@ -17,22 +17,20 @@
   
   <entry>
     <title>开发环境</title>
-    <link href="http://jaxlying.github.io/2016/09/23/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
-    <id>http://jaxlying.github.io/2016/09/23/开发工具/</id>
-    <published>2016-09-23T15:12:19.000Z</published>
-    <updated>2016-09-23T15:56:55.331Z</updated>
+    <link href="http://jaxlying.github.io/2016/09/26/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/"/>
+    <id>http://jaxlying.github.io/2016/09/26/开发环境/</id>
+    <published>2016-09-26T11:00:06.000Z</published>
+    <updated>2016-09-26T11:04:29.154Z</updated>
     
-    <content type="html"><![CDATA[<p>因为一些原因可能会重装系统，每次找一些插件或配置都很麻烦。<br>所以我想写一篇文章总结一下各个软件的配置或插件，方便以后<br>捣鼓系统。（逃）</p>
+    <content type="html"><![CDATA[<p>因为一些原因可能会重装系统，每次找一些插件或配置都很麻烦。所以我想写一篇文章总结<br>下各个软件的配置或插件，方便以后捣鼓系统。（逃）<br><a id="more"></a></p>
 <ol>
-<li><a href="https://www.sublimetext.com/3" target="_blank" rel="external">sublimetext3</a><br><a href="https://packagecontrol.io/installation" target="_blank" rel="external">包管理器</a><br>主题: Colorsublime(直接用包管理器搜)下的Adventure_Time<br><a href="https://gist.github.com/Jaxlying/af368b7e7081d087ec2af558e74ef523" target="_blank" rel="external">配置</a><br><a href="https://github.com/Jaxlying/bs3-sublime-plugin" target="_blank" rel="external">bs3-sublime-plugin</a><br>markdown preview(包管理器下载)</li>
+<li><a href="https://www.sublimetext.com/3" target="_blank" rel="external">sublimetext3</a><br> <a href="https://packagecontrol.io/installation" target="_blank" rel="external">包管理器</a><br> 主题: Colorsublime(直接用包管理器搜)下的Adventure_Time<br> markdown preview(包管理器下载)<br> <a href="https://github.com/Jaxlying/bs3-sublime-plugin" target="_blank" rel="external">bs3-sublime-plugin</a><br> <a href="https://gist.github.com/Jaxlying/af368b7e7081d087ec2af558e74ef523" target="_blank" rel="external">配置</a><br> <a href="https://gist.github.com/Jaxlying/787c005754bbe3fccec8c95cfe49ba25" target="_blank" rel="external">快捷键</a></li>
 </ol>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;因为一些原因可能会重装系统，每次找一些插件或配置都很麻烦。&lt;br&gt;所以我想写一篇文章总结一下各个软件的配置或插件，方便以后&lt;br&gt;捣鼓系统。（逃）&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.sublimetext.com/3&quot; target=&quot;_b
+      &lt;p&gt;因为一些原因可能会重装系统，每次找一些插件或配置都很麻烦。所以我想写一篇文章总结&lt;br&gt;下各个软件的配置或插件，方便以后捣鼓系统。（逃）&lt;br&gt;
     
     </summary>
     
@@ -48,7 +46,7 @@
     <link href="http://jaxlying.github.io/2016/09/21/linux%E5%B7%A5%E5%85%B7%E5%8C%85/"/>
     <id>http://jaxlying.github.io/2016/09/21/linux工具包/</id>
     <published>2016-09-21T15:12:19.000Z</published>
-    <updated>2016-09-23T13:35:46.852Z</updated>
+    <updated>2016-09-26T05:44:32.406Z</updated>
     
     <content type="html"><![CDATA[<p>记录一些个人linux常用的工具包</p>
 ]]></content>
@@ -72,7 +70,7 @@
     <link href="http://jaxlying.github.io/2016/06/05/linux%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
     <id>http://jaxlying.github.io/2016/06/05/linux开发环境搭建/</id>
     <published>2016-06-05T15:16:19.000Z</published>
-    <updated>2016-09-23T13:35:46.858Z</updated>
+    <updated>2016-09-26T05:44:32.409Z</updated>
     
     <content type="html"><![CDATA[<p>以下记录我在linux系统下搭建开发环境的时候所安装的软件，防止哪天重装系统的时候不知道该装点啥软件</p>
 <ol>

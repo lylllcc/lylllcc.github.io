@@ -2,16 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://jaxlying.github.io/2016/10/26/vue%E7%9A%84cookie%E8%B7%A8%E5%9F%9F/</loc>
+    <loc>http://jaxlying.github.io/2016/10/28/java%E7%AC%94%E8%AE%B0/</loc>
     
-    <lastmod>2016-10-26T12:49:58.722Z</lastmod>
+    <lastmod>2016-10-28T06:53:08.826Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://jaxlying.github.io/spring%E5%B8%B8%E7%94%A8%E6%B3%A8%E8%A7%A3.html</loc>
+    
+    <lastmod>2016-10-27T15:41:52.131Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://jaxlying.github.io/2016/10/25/%E6%89%8B%E6%9C%BA%E5%88%B7%E4%BA%86%E4%B8%AAgoogle%E6%9C%8D%E5%8A%A1%EF%BC%8C%E6%84%9F%E8%A7%89%E5%A5%BD%E7%88%BD/</loc>
     
-    <lastmod>2016-10-25T13:43:41.513Z</lastmod>
+    <lastmod>2016-10-27T14:53:56.297Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://jaxlying.github.io/2016/10/26/vue%E7%9A%84cookie%E8%B7%A8%E5%9F%9F/</loc>
+    
+    <lastmod>2016-10-26T12:49:58.722Z</lastmod>
     
   </url>
   

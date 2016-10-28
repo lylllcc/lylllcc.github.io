@@ -129,6 +129,65 @@
       <div class="body-wrap">
         
   
+    <article id="post-java笔记" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/10/28/java笔记/">java笔记</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>记录一些常用的但是我记不住的java用法。</p>
+<ul>
+<li><p>结束某线程<br>  使用interrupt()方法。但调用之后不会结束线程会抛出InterruptedException异常，<br>  捕获该异常并使用break退出死循环。</p>
+</li>
+<li><p>接口的default方法</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">interface IF&#123;</div><div class="line">    void fun1();</div><div class="line">    void fun2();</div><div class="line">    default void fun3()&#123;</div><div class="line">   		//code</div><div class="line">   	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>精准测量程序运行时间</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">long start =  System.currentTimeMillis();</div><div class="line">//code</div><div class="line">long time =  System.currentTimeMillis() - start;</div></pre></td></tr></table></figure></li>
+</ul>
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      <a href="/2016/10/28/java笔记/" class="archive-article-date">
+  	<time datetime="2016-10-28T06:40:51.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-10-28</time>
+</a>
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags"></i>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java/">java</a></li></ul>
+	</div>
+
+      
+
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+
+
+  
     <article id="post-vue的cookie跨域" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -197,7 +256,8 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <p>在中国卖的手机一般都把google的服务砍掉了，最近实在是太无聊了，就想着弄一个google<br>玩玩，我用的是三星a7手机国行版，手机权限太高了，试着root或者通过刷gapp都没成功。<br>最后发现这个手机型号除了国行版还有其他版本，什么港版，台湾，国际等。而这些大部分<br>谷歌服务都没砍掉，于是在某宝上花10块钱买了个港版rom刷了进去。<br>然后就可以愉快的用google家的服务了。<br>用了之后发现，安卓手机砍掉google服务，能砍掉智能手机大半的智能性。</p>
+
       
     </div>
     <div class="article-info article-info-index">
@@ -206,6 +266,11 @@
   	<time datetime="2016-10-25T13:43:41.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-10-25</time>
 </a>
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags"></i>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/boring/">boring</a></li></ul>
+	</div>
+
       
 
       <div class="clearfix"></div>
@@ -452,7 +517,7 @@
     
     	<section class="tools-section tools-section-tag">
     			<div class="widget tagcloud" id="js-tagcloud">
-    				<a href="/tags/c/" style="font-size: 10px;">c</a> <a href="/tags/c/" style="font-size: 10px;">c++</a> <a href="/tags/dev/" style="font-size: 10px;">dev</a> <a href="/tags/linux/" style="font-size: 10px;">linux</a> <a href="/tags/vue/" style="font-size: 10px;">vue</a> <a href="/tags/前端/" style="font-size: 10px;">前端</a>
+    				<a href="/tags/boring/" style="font-size: 10px;">boring</a> <a href="/tags/c/" style="font-size: 10px;">c</a> <a href="/tags/c/" style="font-size: 10px;">c++</a> <a href="/tags/dev/" style="font-size: 10px;">dev</a> <a href="/tags/java/" style="font-size: 10px;">java</a> <a href="/tags/linux/" style="font-size: 10px;">linux</a> <a href="/tags/vue/" style="font-size: 10px;">vue</a> <a href="/tags/前端/" style="font-size: 10px;">前端</a>
     			</div>
     	</section>
     

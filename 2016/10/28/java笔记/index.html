@@ -4,14 +4,33 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>Tag: dev | Jaxlying</title>
+  <title>java笔记 | Jaxlying</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Jaxlying">
-<meta property="og:url" content="http://jaxlying.github.io/tags/dev/index.html">
+  <meta name="description" content="记录一些常用的但是我记不住的java用法。
+
+结束某线程  使用interrupt()方法。但调用之后不会结束线程会抛出InterruptedException异常，  捕获该异常并使用break退出死循环。
+
+接口的default方法
+  1234567interface IF&amp;#123;    void fun1();    void fun2();    default void fun3(">
+<meta property="og:type" content="article">
+<meta property="og:title" content="java笔记">
+<meta property="og:url" content="http://jaxlying.github.io/2016/10/28/java笔记/index.html">
 <meta property="og:site_name" content="Jaxlying">
+<meta property="og:description" content="记录一些常用的但是我记不住的java用法。
+
+结束某线程  使用interrupt()方法。但调用之后不会结束线程会抛出InterruptedException异常，  捕获该异常并使用break退出死循环。
+
+接口的default方法
+  1234567interface IF&amp;#123;    void fun1();    void fun2();    default void fun3(">
+<meta property="og:updated_time" content="2016-10-28T06:53:08.826Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Jaxlying">
+<meta name="twitter:title" content="java笔记">
+<meta name="twitter:description" content="记录一些常用的但是我记不住的java用法。
+
+结束某线程  使用interrupt()方法。但调用之后不会结束线程会抛出InterruptedException异常，  捕获该异常并使用break退出死循环。
+
+接口的default方法
+  1234567interface IF&amp;#123;    void fun1();    void fun2();    default void fun3(">
   
     <link rel="alternative" href="/atom.xml" title="Jaxlying" type="application/atom+xml">
   
@@ -127,59 +146,113 @@
 </nav>
 
       <div class="body-wrap">
+        <article id="post-java笔记" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
         
   
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2016" class="archive-year">2016</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2016/09/26/开发环境/" class="archive-article-date">
-  	<time datetime="2016-09-26T11:00:06.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-09-26</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/09/26/开发环境/">开发环境</a>
+    <h1 class="article-title" itemprop="name">
+      java笔记
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>记录一些常用的但是我记不住的java用法。</p>
+<ul>
+<li><p>结束某线程<br>  使用interrupt()方法。但调用之后不会结束线程会抛出InterruptedException异常，<br>  捕获该异常并使用break退出死循环。</p>
+</li>
+<li><p>接口的default方法</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">interface IF&#123;</div><div class="line">    void fun1();</div><div class="line">    void fun2();</div><div class="line">    default void fun3()&#123;</div><div class="line">   		//code</div><div class="line">   	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>精准测量程序运行时间</p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">long start =  System.currentTimeMillis();</div><div class="line">//code</div><div class="line">long time =  System.currentTimeMillis() - start;</div></pre></td></tr></table></figure></li>
+</ul>
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      <a href="/2016/10/28/java笔记/" class="archive-article-date">
+  	<time datetime="2016-10-28T06:40:51.000Z" itemprop="datePublished"><i class="icon-clock"></i>2016-10-28</time>
+</a>
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags"></i>
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/dev/">dev</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java/">java</a></li></ul>
 	</div>
 
-          
-	<div class="article-category tagcloud">
-	<i class="icon-price-tags"></i>
-	<a class="article-category-link" href="/categories/dev/">dev</a>
-	</div>
+      
 
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
-  
-  
-    </div></section>
-  
 
-    
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2016/10/26/vue的cookie跨域/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">post</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+<div class="share_jia">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">Share to: &nbsp; </span>
+		<a class="jiathis_button_facebook"></a> 
+	    <a class="jiathis_button_twitter"></a>
+	    <a class="jiathis_button_plus"></a> 
+	    <a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="//v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="java笔记" data-title="java笔记" data-url="http://jaxlying.github.io/2016/10/28/java笔记/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"yyljj"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
 
 
       </div>
@@ -202,9 +275,9 @@
 		mathjax: false,
 		animate: true,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		root: "/",

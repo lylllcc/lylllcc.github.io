@@ -6,7 +6,7 @@
     <entry>
       <title><![CDATA[java笔记]]></title>
       <url>http://jaxlying.github.io/2016/10/28/java%E7%AC%94%E8%AE%B0/</url>
-      <content type="html"><![CDATA[<p>记录一些常用的但是我记不住的java用法。</p>
+      <content type="html"><![CDATA[<p>记录一些常用的但是我记不住的java用法。<br><a id="more"></a></p>
 <ul>
 <li><p>结束某线程<br>  使用interrupt()方法。但调用之后不会结束线程会抛出InterruptedException异常，<br>  捕获该异常并使用break退出死循环。</p>
 </li>
@@ -20,16 +20,16 @@
     </entry>
     
     <entry>
-      <title><![CDATA[post]]></title>
+      <title><![CDATA[vue的cookie跨域]]></title>
       <url>http://jaxlying.github.io/2016/10/26/vue%E7%9A%84cookie%E8%B7%A8%E5%9F%9F/</url>
-      <content type="html"><![CDATA[<p>最近在做一个项目，前端用的vue，当用vue-resource时，有一步涉及到cookie跨域。在网<br>上找了好多，发现都不能用，可能已经被废掉了吧。最后在vue的github issues中找到了解<br>决办法。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">Vue.http.interceptors.push((request, next) =&gt; &#123;</div><div class="line">    request.credentials = true</div><div class="line">    next()</div><div class="line">&#125;)</div></pre></td></tr></table></figure></p>
+      <content type="html"><![CDATA[<p>最近在做一个项目，前端用的vue，当用vue-resource时，有一步涉及到cookie跨域。在网<br>上找了好多，发现都不能用，可能已经被废掉了吧。最后在vue的github issues中找到了解<br>决办法。<br><a id="more"></a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">Vue.http.interceptors.push((request, next) =&gt; &#123;</div><div class="line">    request.credentials = true</div><div class="line">    next()</div><div class="line">&#125;)</div></pre></td></tr></table></figure></p>
 ]]></content>
     </entry>
     
     <entry>
       <title><![CDATA[手机刷了个google服务，感觉好爽]]></title>
       <url>http://jaxlying.github.io/2016/10/25/%E6%89%8B%E6%9C%BA%E5%88%B7%E4%BA%86%E4%B8%AAgoogle%E6%9C%8D%E5%8A%A1%EF%BC%8C%E6%84%9F%E8%A7%89%E5%A5%BD%E7%88%BD/</url>
-      <content type="html"><![CDATA[<p>在中国卖的手机一般都把google的服务砍掉了，最近实在是太无聊了，就想着弄一个google<br>玩玩，我用的是三星a7手机国行版，手机权限太高了，试着root或者通过刷gapp都没成功。<br>最后发现这个手机型号除了国行版还有其他版本，什么港版，台湾，国际等。而这些大部分<br>谷歌服务都没砍掉，于是在某宝上花10块钱买了个港版rom刷了进去。<br>然后就可以愉快的用google家的服务了。<br>用了之后发现，安卓手机砍掉google服务，能砍掉智能手机大半的智能性。</p>
+      <content type="html"><![CDATA[<p>在中国卖的手机一般都把google的服务砍掉了，最近实在是太无聊了，就想着弄一个google<br>玩玩，我用的是三星a7手机国行版，手机权限太高了，试着root或者通过刷gapp都没成功。<br><a id="more"></a><br>最后发现这个手机型号除了国行版还有其他版本，什么港版，台湾，国际等。而这些大部分<br>谷歌服务都没砍掉，于是在某宝上花10块钱买了个港版rom刷了进去。<br>然后就可以愉快的用google家的服务了。<br>用了之后发现，安卓手机砍掉google服务，能砍掉智能手机大半的智能性。</p>
 ]]></content>
     </entry>
     

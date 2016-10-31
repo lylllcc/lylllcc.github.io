@@ -4,15 +4,6 @@
   
     
     <entry>
-      <title><![CDATA[mongodb常用命令]]></title>
-      <url>http://jaxlying.github.io/2016/10/29/mongodb%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
-      <content type="html"><![CDATA[<ul>
-<li>创建数据库<br>  use DATABASE_NAME</li>
-</ul>
-]]></content>
-    </entry>
-    
-    <entry>
       <title><![CDATA[java笔记]]></title>
       <url>http://jaxlying.github.io/2016/10/28/java%E7%AC%94%E8%AE%B0/</url>
       <content type="html"><![CDATA[<p>记录一些常用的但是我记不住的java用法。<br><a id="more"></a></p>

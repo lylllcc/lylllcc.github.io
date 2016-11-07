@@ -4,9 +4,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://alphalyang.github.io/"/>
+  <link href="http://alphalyang.github.io/"/>
   <updated>2016-10-28T06:55:54.026Z</updated>
-  <id>https://alphalyang.github.io/</id>
+  <id>http://alphalyang.github.io/</id>
   
   <author>
     <name>alpha</name>
@@ -17,8 +17,8 @@
   
   <entry>
     <title>java笔记</title>
-    <link href="https://alphalyang.github.io/2016/10/28/java%E7%AC%94%E8%AE%B0/"/>
-    <id>https://alphalyang.github.io/2016/10/28/java笔记/</id>
+    <link href="http://alphalyang.github.io/2016/10/28/java%E7%AC%94%E8%AE%B0/"/>
+    <id>http://alphalyang.github.io/2016/10/28/java笔记/</id>
     <published>2016-10-28T06:40:51.000Z</published>
     <updated>2016-10-28T06:55:54.026Z</updated>
     
@@ -41,14 +41,14 @@
     </summary>
     
     
-      <category term="java" scheme="https://alphalyang.github.io/tags/java/"/>
+      <category term="java" scheme="http://alphalyang.github.io/tags/java/"/>
     
   </entry>
   
   <entry>
     <title>vue的cookie跨域</title>
-    <link href="https://alphalyang.github.io/2016/10/26/vue%E7%9A%84cookie%E8%B7%A8%E5%9F%9F/"/>
-    <id>https://alphalyang.github.io/2016/10/26/vue的cookie跨域/</id>
+    <link href="http://alphalyang.github.io/2016/10/26/vue%E7%9A%84cookie%E8%B7%A8%E5%9F%9F/"/>
+    <id>http://alphalyang.github.io/2016/10/26/vue的cookie跨域/</id>
     <published>2016-10-26T12:40:04.000Z</published>
     <updated>2016-10-28T06:56:25.042Z</updated>
     
@@ -62,16 +62,16 @@
     </summary>
     
     
-      <category term="vue" scheme="https://alphalyang.github.io/tags/vue/"/>
+      <category term="vue" scheme="http://alphalyang.github.io/tags/vue/"/>
     
-      <category term="前端" scheme="https://alphalyang.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
+      <category term="前端" scheme="http://alphalyang.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
     
   </entry>
   
   <entry>
     <title>手机刷了个google服务，感觉好爽</title>
-    <link href="https://alphalyang.github.io/2016/10/25/%E6%89%8B%E6%9C%BA%E5%88%B7%E4%BA%86%E4%B8%AAgoogle%E6%9C%8D%E5%8A%A1%EF%BC%8C%E6%84%9F%E8%A7%89%E5%A5%BD%E7%88%BD/"/>
-    <id>https://alphalyang.github.io/2016/10/25/手机刷了个google服务，感觉好爽/</id>
+    <link href="http://alphalyang.github.io/2016/10/25/%E6%89%8B%E6%9C%BA%E5%88%B7%E4%BA%86%E4%B8%AAgoogle%E6%9C%8D%E5%8A%A1%EF%BC%8C%E6%84%9F%E8%A7%89%E5%A5%BD%E7%88%BD/"/>
+    <id>http://alphalyang.github.io/2016/10/25/手机刷了个google服务，感觉好爽/</id>
     <published>2016-10-25T13:43:41.000Z</published>
     <updated>2016-10-28T06:55:44.201Z</updated>
     
@@ -85,14 +85,14 @@
     </summary>
     
     
-      <category term="boring" scheme="https://alphalyang.github.io/tags/boring/"/>
+      <category term="boring" scheme="http://alphalyang.github.io/tags/boring/"/>
     
   </entry>
   
   <entry>
     <title>codeblocks配置编译器</title>
-    <link href="https://alphalyang.github.io/2016/10/22/codeblocks%E9%85%8D%E7%BD%AE%E7%BC%96%E8%AF%91%E5%99%A8/"/>
-    <id>https://alphalyang.github.io/2016/10/22/codeblocks配置编译器/</id>
+    <link href="http://alphalyang.github.io/2016/10/22/codeblocks%E9%85%8D%E7%BD%AE%E7%BC%96%E8%AF%91%E5%99%A8/"/>
+    <id>http://alphalyang.github.io/2016/10/22/codeblocks配置编译器/</id>
     <published>2016-10-22T14:43:54.000Z</published>
     <updated>2016-10-22T15:14:00.896Z</updated>
     
@@ -110,16 +110,16 @@
     </summary>
     
     
-      <category term="c" scheme="https://alphalyang.github.io/tags/c/"/>
+      <category term="c" scheme="http://alphalyang.github.io/tags/c/"/>
     
-      <category term="c++" scheme="https://alphalyang.github.io/tags/c/"/>
+      <category term="c++" scheme="http://alphalyang.github.io/tags/c/"/>
     
   </entry>
   
   <entry>
     <title>开发环境</title>
-    <link href="https://alphalyang.github.io/2016/09/26/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/"/>
-    <id>https://alphalyang.github.io/2016/09/26/开发环境/</id>
+    <link href="http://alphalyang.github.io/2016/09/26/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/"/>
+    <id>http://alphalyang.github.io/2016/09/26/开发环境/</id>
     <published>2016-09-26T11:00:06.000Z</published>
     <updated>2016-10-21T04:47:03.738Z</updated>
     
@@ -135,17 +135,17 @@
     
     </summary>
     
-      <category term="dev" scheme="https://alphalyang.github.io/categories/dev/"/>
+      <category term="dev" scheme="http://alphalyang.github.io/categories/dev/"/>
     
     
-      <category term="dev" scheme="https://alphalyang.github.io/tags/dev/"/>
+      <category term="dev" scheme="http://alphalyang.github.io/tags/dev/"/>
     
   </entry>
   
   <entry>
     <title>一些常用的工具</title>
-    <link href="https://alphalyang.github.io/2016/09/21/%E4%B8%80%E4%BA%9B%E5%B8%B8%E7%94%A8%E7%9A%84%E5%B7%A5%E5%85%B7/"/>
-    <id>https://alphalyang.github.io/2016/09/21/一些常用的工具/</id>
+    <link href="http://alphalyang.github.io/2016/09/21/%E4%B8%80%E4%BA%9B%E5%B8%B8%E7%94%A8%E7%9A%84%E5%B7%A5%E5%85%B7/"/>
+    <id>http://alphalyang.github.io/2016/09/21/一些常用的工具/</id>
     <published>2016-09-21T15:12:19.000Z</published>
     <updated>2016-10-21T05:58:26.588Z</updated>
     
@@ -163,10 +163,10 @@
     
     </summary>
     
-      <category term="linux" scheme="https://alphalyang.github.io/categories/linux/"/>
+      <category term="linux" scheme="http://alphalyang.github.io/categories/linux/"/>
     
     
-      <category term="linux" scheme="https://alphalyang.github.io/tags/linux/"/>
+      <category term="linux" scheme="http://alphalyang.github.io/tags/linux/"/>
     
   </entry>
   

@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.liuyang.pw/"/>
-  <updated>2016-11-18T14:06:17.254Z</updated>
+  <updated>2017-01-01T04:40:16.795Z</updated>
   <id>http://www.liuyang.pw/</id>
   
   <author>
@@ -16,199 +16,16 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>解决gradle构建java是没有清单属性错误</title>
-    <link href="http://www.liuyang.pw/2016/11/18/%E8%A7%A3%E5%86%B3gradle%E6%9E%84%E5%BB%BAjava%E6%98%AF%E6%B2%A1%E6%9C%89%E6%B8%85%E5%8D%95%E5%B1%9E%E6%80%A7%E9%94%99%E8%AF%AF/"/>
-    <id>http://www.liuyang.pw/2016/11/18/解决gradle构建java是没有清单属性错误/</id>
-    <published>2016-11-18T12:26:55.000Z</published>
-    <updated>2016-11-18T14:06:17.254Z</updated>
-    
-    <content type="html"><![CDATA[<p>试着自己写了个gradle构建脚本，构建成功之后运行jar包报错没有清单属性。<br>查资料发现简单点来说就是没有配置主入口。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">jar &#123;</div><div class="line">    manifest &#123;</div><div class="line">        attributes &apos;Main-Class&apos;: &apos;package name&apos;</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p>配置之后运行ok。</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;试着自己写了个gradle构建脚本，构建成功之后运行jar包报错没有清单属性。&lt;br&gt;查资料发现简单点来说就是没有配置主入口。&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;di
-    
-    </summary>
-    
-      <category term="后端" scheme="http://www.liuyang.pw/categories/%E5%90%8E%E7%AB%AF/"/>
-    
-    
-      <category term="java" scheme="http://www.liuyang.pw/tags/java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>java连接mongodb尝试</title>
-    <link href="http://www.liuyang.pw/2016/11/08/java%E8%BF%9E%E6%8E%A5mongodb%E5%B0%9D%E8%AF%95/"/>
-    <id>http://www.liuyang.pw/2016/11/08/java连接mongodb尝试/</id>
-    <published>2016-11-08T05:30:55.000Z</published>
-    <updated>2016-11-08T05:30:55.354Z</updated>
+    <title>test</title>
+    <link href="http://www.liuyang.pw/2017/01/01/test/"/>
+    <id>http://www.liuyang.pw/2017/01/01/test/</id>
+    <published>2017-01-01T04:40:16.000Z</published>
+    <updated>2017-01-01T04:40:16.795Z</updated>
     
     <summary type="html">
     
     </summary>
     
-    
-  </entry>
-  
-  <entry>
-    <title>java笔记</title>
-    <link href="http://www.liuyang.pw/2016/10/28/java%E7%AC%94%E8%AE%B0/"/>
-    <id>http://www.liuyang.pw/2016/10/28/java笔记/</id>
-    <published>2016-10-28T06:40:51.000Z</published>
-    <updated>2016-11-17T15:29:25.146Z</updated>
-    
-    <content type="html"><![CDATA[<p>记录一些常用的但是我记不住的java用法。<br><a id="more"></a></p>
-<ul>
-<li>建立新类的时候优先考虑组合再考虑继承。</li>
-<li>private继承类不能访问，protected继承类可以访问，其他与private相当。</li>
-<li><p>结束某线程<br>  使用interrupt()方法。但调用之后不会结束线程会抛出InterruptedException异常，<br>  捕获该异常并使用break退出死循环。</p>
-</li>
-<li><p>接口的default方法</p>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">interface IF&#123;</div><div class="line">    void fun1();</div><div class="line">    void fun2();</div><div class="line">    default void fun3()&#123;</div><div class="line">   		//code</div><div class="line">   	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-</li>
-<li><p>精准测量程序运行时间</p>
-  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">long start =  System.currentTimeMillis();</div><div class="line">//code</div><div class="line">long time =  System.currentTimeMillis() - start;</div></pre></td></tr></table></figure></li>
-</ul>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;记录一些常用的但是我记不住的java用法。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="java" scheme="http://www.liuyang.pw/categories/java/"/>
-    
-    
-      <category term="java" scheme="http://www.liuyang.pw/tags/java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>vue的cookie跨域</title>
-    <link href="http://www.liuyang.pw/2016/10/26/vue%E7%9A%84cookie%E8%B7%A8%E5%9F%9F/"/>
-    <id>http://www.liuyang.pw/2016/10/26/vue的cookie跨域/</id>
-    <published>2016-10-26T12:40:04.000Z</published>
-    <updated>2016-10-28T06:56:25.042Z</updated>
-    
-    <content type="html"><![CDATA[<p>最近在做一个项目，前端用的vue，当用vue-resource时，有一步涉及到cookie跨域。在网<br>上找了好多，发现都不能用，可能已经被废掉了吧。最后在vue的github issues中找到了解<br>决办法。<br><a id="more"></a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">Vue.http.interceptors.push((request, next) =&gt; &#123;</div><div class="line">    request.credentials = true</div><div class="line">    next()</div><div class="line">&#125;)</div></pre></td></tr></table></figure></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;最近在做一个项目，前端用的vue，当用vue-resource时，有一步涉及到cookie跨域。在网&lt;br&gt;上找了好多，发现都不能用，可能已经被废掉了吧。最后在vue的github issues中找到了解&lt;br&gt;决办法。&lt;br&gt;
-    
-    </summary>
-    
-    
-      <category term="vue" scheme="http://www.liuyang.pw/tags/vue/"/>
-    
-      <category term="前端" scheme="http://www.liuyang.pw/tags/%E5%89%8D%E7%AB%AF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>手机刷了个google服务，感觉好爽</title>
-    <link href="http://www.liuyang.pw/2016/10/25/%E6%89%8B%E6%9C%BA%E5%88%B7%E4%BA%86%E4%B8%AAgoogle%E6%9C%8D%E5%8A%A1%EF%BC%8C%E6%84%9F%E8%A7%89%E5%A5%BD%E7%88%BD/"/>
-    <id>http://www.liuyang.pw/2016/10/25/手机刷了个google服务，感觉好爽/</id>
-    <published>2016-10-25T13:43:41.000Z</published>
-    <updated>2016-11-08T05:33:31.069Z</updated>
-    
-    <content type="html"><![CDATA[<p>在中国卖的手机一般都把google的服务砍掉了，最近实在是太无聊了，就想着弄一个google<br>玩玩，我用的是三星a7手机国行版，手机权限太高了，试着root或者通过刷gapp都没成功。<br><a id="more"></a><br>最后发现这个手机型号除了国行版还有其他版本，什么港版，台湾，国际等。而这些大部分<br>谷歌服务都没砍掉，于是在某宝上花10块钱买了个港版rom刷了进去。<br>然后就可以愉快的用google家的服务了。<br>用了之后发现，安卓手机砍掉google服务，能砍掉智能手机大半的智能性。不仅仅是谷歌<br>的应用做的人性化，谷歌的东西，用多了根本感觉不到卡，推送什么的感觉很自然。一点<br>也不像国产某些app。</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;在中国卖的手机一般都把google的服务砍掉了，最近实在是太无聊了，就想着弄一个google&lt;br&gt;玩玩，我用的是三星a7手机国行版，手机权限太高了，试着root或者通过刷gapp都没成功。&lt;br&gt;
-    
-    </summary>
-    
-    
-      <category term="boring" scheme="http://www.liuyang.pw/tags/boring/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>codeblocks配置编译器</title>
-    <link href="http://www.liuyang.pw/2016/10/22/codeblocks%E9%85%8D%E7%BD%AE%E7%BC%96%E8%AF%91%E5%99%A8/"/>
-    <id>http://www.liuyang.pw/2016/10/22/codeblocks配置编译器/</id>
-    <published>2016-10-22T14:43:54.000Z</published>
-    <updated>2016-10-22T15:14:00.896Z</updated>
-    
-    <content type="html"><![CDATA[<p>codeblocks是一款优秀的c/c++ ide，我们大一时候写c的时候用的就是他，因为当时不让带电脑，用的都是学校配置好的，最近学弟问怎么配环境，自己装了一个发现官方下载链接的第一个竟然不自带编译器。<br>不自带的话当然是去配一个啦。<br>两种解决方案<br><a id="more"></a></p>
-<ol>
-<li>第一下载官方带编译器版本的codeblocks<br><img src="/images/article/codeblock-1.png" alt="下载"><br>这种方法也可能需要自己配置编译器。</li>
-<li>自己下一个gcc或者MinWG然后配置上。<br>setting-&gt;compiler然后<br><img src="/images/article/codeblock-2.png" alt="cb"><br><img src="/images/article/codeblock-3.png" alt="下载"><br>就ok啦。</li>
-</ol>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;codeblocks是一款优秀的c/c++ ide，我们大一时候写c的时候用的就是他，因为当时不让带电脑，用的都是学校配置好的，最近学弟问怎么配环境，自己装了一个发现官方下载链接的第一个竟然不自带编译器。&lt;br&gt;不自带的话当然是去配一个啦。&lt;br&gt;两种解决方案&lt;br&gt;
-    
-    </summary>
-    
-    
-      <category term="c" scheme="http://www.liuyang.pw/tags/c/"/>
-    
-      <category term="c++" scheme="http://www.liuyang.pw/tags/c/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>开发环境</title>
-    <link href="http://www.liuyang.pw/2016/09/26/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/"/>
-    <id>http://www.liuyang.pw/2016/09/26/开发环境/</id>
-    <published>2016-09-26T11:00:06.000Z</published>
-    <updated>2016-10-21T04:47:03.738Z</updated>
-    
-    <content type="html"><![CDATA[<p>因为一些原因可能会重装系统，每次找一些插件或配置都很麻烦。所以我想写一篇文章总结<br>下各个软件的配置或插件，方便以后捣鼓系统。<br><a id="more"></a></p>
-<ol>
-<li><a href="https://www.sublimetext.com/3" target="_blank" rel="external">sublimetext3</a><br> <a href="https://packagecontrol.io/installation" target="_blank" rel="external">包管理器</a><br> 主题: materialize<br> <a href="https://github.com/Jaxlying/bs3-sublime-plugin" target="_blank" rel="external">bs3-sublime-plugin</a>(bootstrap模板)<br> <a href="https://gist.github.com/Jaxlying/af368b7e7081d087ec2af558e74ef523" target="_blank" rel="external">配置</a><br> <a href="https://gist.github.com/Jaxlying/787c005754bbe3fccec8c95cfe49ba25" target="_blank" rel="external">快捷键</a><br> emmet(html速写神器)    </li>
-</ol>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;因为一些原因可能会重装系统，每次找一些插件或配置都很麻烦。所以我想写一篇文章总结&lt;br&gt;下各个软件的配置或插件，方便以后捣鼓系统。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="dev" scheme="http://www.liuyang.pw/categories/dev/"/>
-    
-    
-      <category term="dev" scheme="http://www.liuyang.pw/tags/dev/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>一些常用的工具</title>
-    <link href="http://www.liuyang.pw/2016/09/21/%E4%B8%80%E4%BA%9B%E5%B8%B8%E7%94%A8%E7%9A%84%E5%B7%A5%E5%85%B7/"/>
-    <id>http://www.liuyang.pw/2016/09/21/一些常用的工具/</id>
-    <published>2016-09-21T15:12:19.000Z</published>
-    <updated>2016-10-21T05:58:26.588Z</updated>
-    
-    <content type="html"><![CDATA[<ol>
-<li>标记语言转换工具<a href="http://pandoc.org/" target="_blank" rel="external">pacdoc</a>，可以转换不同的标记语言格式，因为word貌似不能注释，我就经常用markdown写文档，然后加注释，最后转换成word。</li>
-<li>网页上的思维导图工具<a href="https://www.processon.com/" target="_blank" rel="external">processon</a></li>
-<li>统计代码行数工具<a href="http://cloc.sourceforge.net/" target="_blank" rel="external">cloc</a>,他会自动帮忙去重和去注释。</li>
-</ol>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;ol&gt;
-&lt;li&gt;标记语言转换工具&lt;a href=&quot;http://pandoc.org/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;pacdoc&lt;/a&gt;，可以转换不同的标记语言格式，因为word貌似不能注释，我就经常用markdown写文档，然后加注释，最后
-    
-    </summary>
-    
-      <category term="linux" scheme="http://www.liuyang.pw/categories/linux/"/>
-    
-    
-      <category term="linux" scheme="http://www.liuyang.pw/tags/linux/"/>
     
   </entry>
   

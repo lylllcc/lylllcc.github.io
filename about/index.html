@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh">
     <head>
     <!--
         © Material Theme
         https://github.com/viosey/hexo-theme-material
-        Version: 1.2.6 -->
+        Version: 1.3.4 -->
 
     <!-- Title -->
     
@@ -15,19 +15,29 @@
         刘阳的个人博客
     </title>
 
-    <!-- Favicons -->
-    <link rel="icon shortcut" type="image/ico" href="/img/favicon.png">
-    <link rel="icon" sizes="192x192" href="/img/favicon.png">
-    <link rel="apple-touch-icon" href="/img/favicon.png">
-
     <!-- Meta & Info -->
     <meta charset="utf-8">
+
+    <!-- dns prefetch -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    
+    
+    
+    
+    
+    
+
     <meta http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#0097A7">
     <meta name="author" content="lylllcc">
     <meta name="description" content="分享，思考，提高。">
     <meta name="keywords" content="null">
+
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="/img/favicon.png">
+    <link rel="icon" sizes="192x192" href="/img/favicon.png">
+    <link rel="apple-touch-icon" href="/img/favicon.png">
 
     <!--iOS -->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
@@ -50,6 +60,7 @@
     <meta property="og:type" content="blog">
     <meta property="og:title" content="about | 刘阳的个人博客">
     <meta property="og:description" content="分享，思考，提高。">
+    
 
     <!--[if lte IE 9]>
         <link rel="stylesheet" href="/css/ie-blocker.css">
@@ -59,87 +70,89 @@
         
     <![endif]-->
 
-    <!-- Import CSS -->
-    <link rel="stylesheet" href="/css/material.min.css">
-    <link rel="stylesheet" href="/css/style.min.css">
-    <!-- Config CSS -->
+    <!-- Import CSS & jQuery -->
+    
+        <link rel="stylesheet" href="/css/material.min.css">
+        <link rel="stylesheet" href="/css/style.min.css">
+        <!-- Config CSS -->
 
 
 <!-- Other Styles -->
 <style>
-    body, html {
-        font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
-    }
+  body, html {
+    font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+  }
 
-    a {
-        color: #00838F;
-    }
+  a {
+    color: #00838F;
+  }
 
-    .mdl-card__media,
-    #search-label,
-    #search-form-label:after,
-    #scheme-Paradox .hot_tags-count,
-    #scheme-Paradox .sidebar_archives-count,
-    #scheme-Paradox .sidebar-colored .sidebar-header,
-    #scheme-Paradox .sidebar-colored .sidebar-badge{
-        background-color: #0097A7 !important;
-    }
+  .mdl-card__media,
+  #search-label,
+  #search-form-label:after,
+  #scheme-Paradox .hot_tags-count,
+  #scheme-Paradox .sidebar_archives-count,
+  #scheme-Paradox .sidebar-colored .sidebar-header,
+  #scheme-Paradox .sidebar-colored .sidebar-badge{
+    background-color: #0097A7 !important;
+  }
 
-    /* Sidebar User Drop Down Menu Text Color */
-    #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
-    #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
-        color: #0097A7 !important;
-    }
+  /* Sidebar User Drop Down Menu Text Color */
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
+    color: #0097A7 !important;
+  }
 
-    #post_entry-right-info,
-    .sidebar-colored .sidebar-nav li:hover > a,
-    .sidebar-colored .sidebar-nav li:hover > a i,
-    .sidebar-colored .sidebar-nav li > a:hover,
-    .sidebar-colored .sidebar-nav li > a:hover i,
-    .sidebar-colored .sidebar-nav li > a:focus i,
-    .sidebar-colored .sidebar-nav > .open > a,
-    .sidebar-colored .sidebar-nav > .open > a:hover,
-    .sidebar-colored .sidebar-nav > .open > a:focus,
-    #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
-        color: #0097A7 !important;
-    }
+  #post_entry-right-info,
+  .sidebar-colored .sidebar-nav li:hover > a,
+  .sidebar-colored .sidebar-nav li:hover > a i,
+  .sidebar-colored .sidebar-nav li > a:hover,
+  .sidebar-colored .sidebar-nav li > a:hover i,
+  .sidebar-colored .sidebar-nav li > a:focus i,
+  .sidebar-colored .sidebar-nav > .open > a,
+  .sidebar-colored .sidebar-nav > .open > a:hover,
+  .sidebar-colored .sidebar-nav > .open > a:focus,
+  #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
+    color: #0097A7 !important;
+  }
 
-    .toTop {
-        background: #757575 !important;
-    }
+  .toTop {
+    background: #757575 !important;
+  }
 
-    .material-layout .material-post>.material-nav,
-    .material-layout .material-index>.material-nav,
-    .material-nav a {
-        color: #757575;
-    }
+  .material-layout .material-post>.material-nav,
+  .material-layout .material-index>.material-nav,
+  .material-nav a {
+    color: #757575;
+  }
 
-    #scheme-Paradox .MD-burger-layer {
-        background-color: #757575;
-    }
+  #scheme-Paradox .MD-burger-layer {
+    background-color: #757575;
+  }
 
-    #scheme-Paradox #post-toc-trigger-btn {
-        color: #757575;
-    }
+  #scheme-Paradox #post-toc-trigger-btn {
+    color: #757575;
+  }
 
-    .post-toc a:hover {
-        color: #00838F;
-        text-decoration: underline;
-    }
+  .post-toc a:hover {
+    color: #00838F;
+    text-decoration: underline;
+  }
+
 </style>
 
 
 <!-- Theme Background Related-->
 
     <style>
-        body{
-            background-color: #F5F5F5;
-        }
+      body{
+        background-color: #F5F5F5;
+      }
 
-        /* blog_info bottom background */
-        #scheme-Paradox .material-layout .something-else .mdl-card__supporting-text{
-            background-color: #fff;
-        }
+      /* blog_info bottom background */
+      #scheme-Paradox .material-layout .something-else .mdl-card__supporting-text{
+        background-color: #fff;
+      }
     </style>
 
 
@@ -148,34 +161,42 @@
 <!-- Fade Effect -->
 
     <style>
-        .fade {
-            transition: all 800ms linear;
-            -webkit-transform: translate3d(0,0,0);
-            -moz-transform: translate3d(0,0,0);
-            -ms-transform: translate3d(0,0,0);
-            -o-transform: translate3d(0,0,0);
-            transform: translate3d(0,0,0);
-            opacity: 1;
-        }
+      .fade {
+        transition: all 800ms linear;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        opacity: 1;
+      }
 
-        .fade.out{
-            opacity: 0;
-        }
+      .fade.out{
+        opacity: 0;
+      }
     </style>
 
 
-    <script src="/js/jquery.min.js"></script>
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/queue.js"></script>
+    
 
-    <link rel="stylesheet" href="/css/highlight/solarized-white.css">
-
-    <!-- UC Browser Compatible-->
+    <!-- UC Browser Compatible -->
     <script>
         var agent = navigator.userAgent.toLowerCase();
         if(agent.indexOf('ucbrowser')>0) {
-            document.write('<link rel="stylesheet" href="/css/uc.css">');
+            document.write("<link rel=\"stylesheet\" href=\"/css/uc.css\">");
             alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
         }
     </script>
+
+    
+
+    
+
+
+    <!-- Bing Background -->
+    
 
     <!-- Custom Head -->
     
@@ -187,7 +208,7 @@
 
 
     
-        <body id="scheme-Paradox">
+        <body id="scheme-Paradox" class="lazy">
             <div class="material-layout  mdl-js-layout has-drawer is-upgraded">
                 
 
@@ -225,7 +246,8 @@
             <script>
     var randomNum = Math.floor(Math.random() * 19 + 1);
 
-    $('.post_thumbnail-random').css('background-image', 'url(' + '/img/random/material-' + randomNum + '.png' + ')');
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').addClass('lazy');
 </script>
 
         
@@ -339,7 +361,7 @@
                 
 
                 <!-- Post Content -->
-                <div id="post-content" class="markdown-Github mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
         
     
@@ -353,28 +375,8 @@
                 <!-- Post Comments -->
                 
                     
-    <!-- 使用多说评论 -->
-    <link rel="stylesheet" href="/css/duoshuo.min.css">
-<style>
-    #ds-thread #ds-reset .ds-post-button{
-        background-color: #0097A7 !important;
-    }
-    #ds-wrapper #ds-reset .ds-icons-32{
-        background-color: #0097A7 !important;
-    }
-    #ds-reset .ds-highlight {
-        color: #0097A7 !important;
-    }
-</style>
-<div id="comments">
-    <!-- 多说评论框 start -->
-    <div class="ds-thread"
-        data-thread-key=""
-        data-url="https://lylllcc.github.io/about/index.html"
-        data-title="about">
-    </div>
-    <!-- 多说评论框 end -->
-</div>
+
+
 
 
 
@@ -428,7 +430,7 @@
 
     <!-- Sidebar Email -->
     <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
-        lylllcc@gmail.com
+        youremail@email.com
         <b class="caret"></b>
     </a>
 </div>
@@ -442,7 +444,9 @@
             
                 <li>
                     <a href="#" target="_blank" title="Email Me">
-                        <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
+                        
+                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
+                        
                         Email Me
                     </a>
                 </li>
@@ -451,85 +455,46 @@
     </li>
 
     <!-- Homepage -->
-    <li id="sidebar-first-li">
-        <a href="/" target="_self">
-            <i class="material-icons sidebar-material-icons">home</i>
-            主页
-        </a>
-    </li>
-
-    <!-- I'm Feeling Lucky -->
-    <!--
-    <li class="dropdown">
-        <a href="" target="_self">
-            <i class="material-icons sidebar-material-icons">explore</i>
-             sidebar.imlucky
-        </a>
-    </li>
-    -->
+    
+        <li id="sidebar-first-li">
+            <a href="/" target="_self">
+                
+                    <i class="material-icons sidebar-material-icons">home</i>
+                
+                主页
+            </a>
+        </li>
+        
+    
 
     <!-- Archives  -->
-    <li class="dropdown">
-        <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
-            <i class="material-icons sidebar-material-icons">inbox</i>
-             归档
-            <b class="caret"></b>
-        </a>
-        <ul class="dropdown-menu">
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">inbox</i>
+                
+                    归档
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
             <li>
-            <a class="sidebar_archives-link" href="/archives/2017/01/">一月 2017<span class="sidebar_archives-count">1</span></a>
-        </ul>
-    </li>
+                <a class="sidebar_archives-link" href="/archives/2017/04/">四月 2017<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/01/">一月 2017<span class="sidebar_archives-count">1</span></a>
+            </ul>
+        </li>
+        
+    
 
     <!-- Categories  -->
     
 
-    <!-- Divider -->
-    <li class="divider"></li>
-
-
     <!-- Pages  -->
-  	
-        <li>
-            <a href="/about" title="关于我">
-                
-                    <i class="material-icons sidebar-material-icons">person</i>
-                
-                关于我
-            </a>
-        </li>
-  	
-        <li>
-            <a href="/links" title="友情链接">
-                
-                    <i class="material-icons sidebar-material-icons">people</i>
-                
-                友情链接
-            </a>
-        </li>
-  	
-        <li>
-            <a href="/tags" title="标签">
-                
-                    <i class="material-icons sidebar-material-icons">backup</i>
-                
-                标签
-            </a>
-        </li>
-  	
+    
 
-    <!-- Article Numebr  -->
-    <li>
-        <a href="/archives">
-            文章总数
-            <span class="sidebar-badge">1</span>
-        </a>
-    </li>
+    <!-- Article Number  -->
+    
 </ul>
 
-
-        <!-- Sidebar Divider -->
-        <div class="sidebar-divider"></div>
 
         <!-- Sidebar Footer -->
         <!--
@@ -542,46 +507,39 @@ It will not impact the appearance and can give developers a lot of support :)
 它不会影响美观并可以给开发者很大的支持和动力。 :)
 -->
 
+<!-- Sidebar Divider -->
+
+    <div class="sidebar-divider"></div>
+
+
 <!-- Theme Material -->
-<a href="https://github.com/viosey/hexo-theme-material"  class="sidebar-footer-text-a" target="_blank">
-    <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
-        主题 - Material
-        <span class="sidebar-badge badge-circle">i</span>
-    </div>
-</a>
+
+    <a href="https://github.com/viosey/hexo-theme-material"  class="sidebar-footer-text-a" target="_blank">
+        <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+            主题 - Material
+            <span class="sidebar-badge badge-circle">i</span>
+        </div>
+    </a>
+
 
 <!-- Help & Support -->
 <!--
-<a href="mailto:hiviosey@gmail.com" class="sidebar-footer-text-a">
-    <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
-    sidebar.help
-    <span class="mdl-button__ripple-container">
-      <span class="mdl-ripple"></span>
-    </span>
-  </div>
-</a>
+
 -->
 
 <!-- Feedback -->
 <!--
-<a href="https://github.com/viosey/hexo-theme-material/issues" target="_blank" class="sidebar-footer-text-a">
-    <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
-         sidebar.feedback
-                    <span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></div>
-</a>
+
 -->
 
-<!-- Abount Theme -->
+<!-- About Theme -->
 <!--
-<a href="https://blog.viosey.com/index.php/Material.html" target="_blank" class="sidebar-footer-text-a">
-    <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
-         sidebar.about_theme
-        <span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></div>
-</a>-->
+
+-->
 
     </div>
 
-    <!-- Sidebar Sponsor -->
+    <!-- Sidebar Image -->
     
 
 </aside>
@@ -598,7 +556,7 @@ It will not impact the appearance and can give developers a lot of support :)
     <!-- Twitter -->
     
         <a href="https://twitter.com/twitter" target="_blank">
-            <button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(/img/footer/footer_ico-twitter.png);">
+            <button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(/img/footer/footer_ico-twitter.svg);">
                 <span class="visuallyhidden">Twitter</span>
             </button><!--
      --></a>
@@ -607,7 +565,7 @@ It will not impact the appearance and can give developers a lot of support :)
     <!-- Facebook -->
     
         <a href="https://www.facebook.com/facebook" target="_blank">
-            <button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(/img/footer/footer_ico-facebook.png);">
+            <button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(/img/footer/footer_ico-facebook.svg);">
                 <span class="visuallyhidden">Facebook</span>
             </button><!--
      --></a>
@@ -616,7 +574,7 @@ It will not impact the appearance and can give developers a lot of support :)
     <!-- Google + -->
     
         <a href="https://www.google.com/" target="_blank">
-            <button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(/img/footer/footer_ico-gplus.png);">
+            <button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(/img/footer/footer_ico-gplus.svg);">
                 <span class="visuallyhidden">Google Plus</span>
             </button><!--
      --></a>
@@ -679,27 +637,30 @@ It will not impact the appearance and can give developers a lot of support :)
 
 
                     <!-- Import File -->
-<script src="/js/highlight.min.js"></script>
-<script src="/js/js.min.js"></script>
-<script src="/js/nprogress.js"></script>
+
+    <script src="/js/lazyload.min.js"></script>
+    <script src="/js/js.min.js"></script>
+
+
+
+    <script src="/js/nprogress.js"></script>
+
 
 <script type="text/javascript">
     NProgress.configure({
         showSpinner: true
     });
     NProgress.start();
-
     $('#nprogress .bar').css({
-        'background': '#FF4081'
+        'background': '#29d'
     });
     $('#nprogress .peg').css({
-        'box-shadow': '0 0 10px #FF4081, 0 0 15px #FF4081'
+        'box-shadow': '0 0 10px #29d, 0 0 15px #29d'
     });
     $('#nprogress .spinner-icon').css({
-        'border-top-color': '#FF4081',
-        'border-left-color': '#FF4081'
+        'border-top-color': '#29d',
+        'border-left-color': '#29d'
     });
-
     setTimeout(function() {
         NProgress.done();
         $('.fade').removeClass('out');
@@ -714,31 +675,11 @@ It will not impact the appearance and can give developers a lot of support :)
 
 
 
-    <!-- 多说公共 js 代码 start -->
-    <script type="text/javascript">
-        var duoshuoQuery = {
-            short_name: 'lylllcc'
-        };
-        (function() {
-            var ds = document.createElement('script');
-            ds.type = 'text/javascript';
-            ds.async = true;
-            ds.src = 'https://static.duoshuo.com/embed.js';
-            ds.charset = 'UTF-8';
-            (document.getElementsByTagName('head')[0]
-             || document.getElementsByTagName('body')[0]).appendChild(ds);
-        })();
-    </script>
-    <!-- 多说公共 js 代码 end -->
 
 
 
 
 
-<!-- Swiftye -->
-
-
-<!-- Local Search-->
 
 
 <!-- Window Load-->
@@ -751,6 +692,21 @@ It will not impact the appearance and can give developers a lot of support :)
 
 <!-- MathJax Load-->
 
+<script>
+    <!-- Offer LazyLoad -->
+    queue.offer(function(){
+        $('.lazy').lazyload({
+            effect : 'show'
+        });
+    });
+
+    <!-- Start Queue -->
+    $(document).ready(function(){
+        setInterval(function(){
+            queue.execNext();
+        },200);
+    });
+</script>
 
                 </main>
             </div>

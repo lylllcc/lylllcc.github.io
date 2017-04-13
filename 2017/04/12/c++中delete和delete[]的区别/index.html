@@ -399,7 +399,9 @@
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
         <p>今天做了个改错题，跪在析构函数的delete上了。回来查了一下delete的具体用法，整理一下。<br>网上说 delete[] 是释放当初new的整个数组，而delete 释放的数组的第一个元素。写了个简单的程序测试了一下。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">int *a = new int[10];</div><div class="line">//delete[] a;</div><div class="line">delete a;</div><div class="line"></div><div class="line">return 0;</div></pre></td></tr></table></figure></p>
-<p> 单步调试的时候我发现 <img src="imgs/2017/4/12" alt="1"> 运行delete a;那一行之后全部开的内存都被释放掉了。</p>
+<p> 单步调试的时候我发现 <img src="/imgs/2017/4/12" alt="1"> 运行delete a;那一行之后全部开的内存都被释放掉了。<br> 查了好久，原来c++的delete是调用对象的析构函数来实现的。而基本的数据类型没有析构函数，在delete的时候直接全部释放掉了。<br> 于是自己写了一个来测试一下，自定义数据类型是否满足。<br> <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line"> #include &lt;iostream&gt;</div><div class="line"></div><div class="line">using namespace std;</div><div class="line">class A&#123;</div><div class="line">public:</div><div class="line">    int *b;</div><div class="line">    A()</div><div class="line">    &#123;</div><div class="line">        b = new int[10];</div><div class="line">        b[0] = 1;</div><div class="line">    &#125;</div><div class="line">    ~A()</div><div class="line">    &#123;</div><div class="line">        delete[] b;</div><div class="line">    &#125;</div><div class="line">&#125;;</div><div class="line"></div><div class="line">int main()</div><div class="line">&#123;</div><div class="line">    int *a = new int[10];</div><div class="line">    //delete[] a;</div><div class="line">    delete a;</div><div class="line">    cout&lt;&lt;a[1].b[0];</div><div class="line"></div><div class="line">    return 0;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>我在自己定义的类A中定义了一个数组，然后在构造函数中给数组的第一个元素赋值。然后delete a;如果上述成立的话，那么应该只有 a[0]被释放了内存，而a[1]这个对象还在内存中，事实证明，他果然还在。</p>
+<p>所以 如果是 new 一个对象的话，可以用delete来释放内存 如果是new 一个数组的话，就要delete[] 才能清除干净。</p>
 
     
 
@@ -475,7 +477,7 @@
 
     <!-- Sidebar Email -->
     <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
-        youremail@email.com
+        lylllcc@gamil.com
         <b class="caret"></b>
     </a>
 </div>
@@ -608,29 +610,11 @@ It will not impact the appearance and can give developers a lot of support :)
         <div class="mdl-mini-footer--left-section sns-list">
     <!-- Twitter -->
     
-        <a href="https://twitter.com/twitter" target="_blank">
-            <button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(/img/footer/footer_ico-twitter.svg);">
-                <span class="visuallyhidden">Twitter</span>
-            </button><!--
-     --></a>
-    
 
     <!-- Facebook -->
     
-        <a href="https://www.facebook.com/facebook" target="_blank">
-            <button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(/img/footer/footer_ico-facebook.svg);">
-                <span class="visuallyhidden">Facebook</span>
-            </button><!--
-     --></a>
-    
 
     <!-- Google + -->
-    
-        <a href="https://www.google.com/" target="_blank">
-            <button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(/img/footer/footer_ico-gplus.svg);">
-                <span class="visuallyhidden">Google Plus</span>
-            </button><!--
-     --></a>
     
 
     <!-- Weibo -->

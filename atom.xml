@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lylllcc.github.io/"/>
-  <updated>2017-04-13T22:30:30.735Z</updated>
+  <updated>2017-04-30T03:12:57.194Z</updated>
   <id>https://lylllcc.github.io/</id>
   
   <author>
@@ -16,14 +16,35 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>使用腾讯云服务器做ss转发</title>
+    <link href="https://lylllcc.github.io/2017/04/30/%E4%BD%BF%E7%94%A8%E8%85%BE%E8%AE%AF%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%81%9Ass%E8%BD%AC%E5%8F%91/"/>
+    <id>https://lylllcc.github.io/2017/04/30/使用腾讯云服务器做ss转发/</id>
+    <published>2017-04-30T02:33:20.000Z</published>
+    <updated>2017-04-30T03:12:57.194Z</updated>
+    
+    <content type="html"><![CDATA[<p>刚开始用的是版瓦工的服务器，后来因为一些原因账号不能用了，如果还想用的话，还要再申请账号，还要再买，虽然版瓦工很便宜，但是最近手头相当紧呀，也不想再太折腾，于是就买了个70块钱一年的ss账号。链接我就不放了，谷歌搜一下ss账号第一个就是。<br>这个账号不限流量，但是限制连接的个数（其实我觉得没限制），为了方便广大吃瓜群众科学上网，我用腾讯云做了一次转发，让大家连在我的腾讯云上，然后腾讯云连这个ss。<br>实现方法有好多，但好多我也都失败了，最后我是参考<a href="https://doub.io/ss-jc29/" target="_blank" rel="external">这个</a>成功的。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;刚开始用的是版瓦工的服务器，后来因为一些原因账号不能用了，如果还想用的话，还要再申请账号，还要再买，虽然版瓦工很便宜，但是最近手头相当紧呀，也不想再太折腾，于是就买了个70块钱一年的ss账号。链接我就不放了，谷歌搜一下ss账号第一个就是。&lt;br&gt;这个账号不限流量，但是限制连
+    
+    </summary>
+    
+    
+      <category term="linux" scheme="https://lylllcc.github.io/tags/linux/"/>
+    
+  </entry>
+  
+  <entry>
     <title>c++中delete和delete[]的区别</title>
     <link href="https://lylllcc.github.io/2017/04/12/c++%E4%B8%ADdelete%E5%92%8Cdelete%5B%5D%E7%9A%84%E5%8C%BA%E5%88%AB/"/>
     <id>https://lylllcc.github.io/2017/04/12/c++中delete和delete[]的区别/</id>
     <published>2017-04-12T14:33:48.000Z</published>
-    <updated>2017-04-13T22:30:30.735Z</updated>
+    <updated>2017-04-13T22:34:27.222Z</updated>
     
     <content type="html"><![CDATA[<p>今天做了个改错题，跪在析构函数的delete上了。回来查了一下delete的具体用法，整理一下。<br>网上说 delete[] 是释放当初new的整个数组，而delete 释放的数组的第一个元素。写了个简单的程序测试了一下。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">int *a = new int[10];</div><div class="line">//delete[] a;</div><div class="line">delete a;</div><div class="line"></div><div class="line">return 0;</div></pre></td></tr></table></figure></p>
-<p> 单步调试的时候我发现 <img src="/imgs/2017/4/12" alt="1"> 运行delete a;那一行之后全部开的内存都被释放掉了。<br> 查了好久，原来c++的delete是调用对象的析构函数来实现的。而基本的数据类型没有析构函数，在delete的时候直接全部释放掉了。<br> 于是自己写了一个来测试一下，自定义数据类型是否满足。<br> <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line"> #include &lt;iostream&gt;</div><div class="line"></div><div class="line">using namespace std;</div><div class="line">class A&#123;</div><div class="line">public:</div><div class="line">    int *b;</div><div class="line">    A()</div><div class="line">    &#123;</div><div class="line">        b = new int[10];</div><div class="line">        b[0] = 1;</div><div class="line">    &#125;</div><div class="line">    ~A()</div><div class="line">    &#123;</div><div class="line">        delete[] b;</div><div class="line">    &#125;</div><div class="line">&#125;;</div><div class="line"></div><div class="line">int main()</div><div class="line">&#123;</div><div class="line">    int *a = new int[10];</div><div class="line">    //delete[] a;</div><div class="line">    delete a;</div><div class="line">    cout&lt;&lt;a[1].b[0];</div><div class="line"></div><div class="line">    return 0;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p> 单步调试的时候我发现 <img src="/imgs/2017412/1.png" alt="1"> 运行delete a;那一行之后全部开的内存都被释放掉了。<br> 查了好久，原来c++的delete是调用对象的析构函数来实现的。而基本的数据类型没有析构函数，在delete的时候直接全部释放掉了。<br> 于是自己写了一个来测试一下，自定义数据类型是否满足。<br> <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line"> #include &lt;iostream&gt;</div><div class="line"></div><div class="line">using namespace std;</div><div class="line">class A&#123;</div><div class="line">public:</div><div class="line">    int *b;</div><div class="line">    A()</div><div class="line">    &#123;</div><div class="line">        b = new int[10];</div><div class="line">        b[0] = 1;</div><div class="line">    &#125;</div><div class="line">    ~A()</div><div class="line">    &#123;</div><div class="line">        delete[] b;</div><div class="line">    &#125;</div><div class="line">&#125;;</div><div class="line"></div><div class="line">int main()</div><div class="line">&#123;</div><div class="line">    int *a = new int[10];</div><div class="line">    //delete[] a;</div><div class="line">    delete a;</div><div class="line">    cout&lt;&lt;a[1].b[0];</div><div class="line"></div><div class="line">    return 0;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
 <p>我在自己定义的类A中定义了一个数组，然后在构造函数中给数组的第一个元素赋值。然后delete a;如果上述成立的话，那么应该只有 a[0]被释放了内存，而a[1]这个对象还在内存中，事实证明，他果然还在。</p>
 <p>所以 如果是 new 一个对象的话，可以用delete来释放内存 如果是new 一个数组的话，就要delete[] 才能清除干净。</p>
 ]]></content>
@@ -84,6 +105,27 @@
       <category term="爬虫" scheme="https://lylllcc.github.io/tags/%E7%88%AC%E8%99%AB/"/>
     
       <category term="scrapy" scheme="https://lylllcc.github.io/tags/scrapy/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>让我帮你百度一下</title>
+    <link href="https://lylllcc.github.io/2015/12/04/%E8%AE%A9%E6%88%91%E5%B8%AE%E4%BD%A0%E7%99%BE%E5%BA%A6%E4%B8%80%E4%B8%8B/"/>
+    <id>https://lylllcc.github.io/2015/12/04/让我帮你百度一下/</id>
+    <published>2015-12-03T22:35:30.000Z</published>
+    <updated>2017-04-13T22:49:53.920Z</updated>
+    
+    <content type="html"><![CDATA[<p>今天在群里看到一个链接，点开之后进入一个仿百度的界面，界面自动播放动画，自动把内容输入到搜索框，然后自动搜索。感觉挺有趣的，正好最近在看jquery，于是我就用jquery实现了一下这个功能。<br>项目演示地址 <a href="http://lylllcc.github.io/project/help/">让我帮你百度一下</a><br>用法很简单，只要你把想搜的东西放到搜索框里，然后点生成链接，就可以把链接发给小伙伴去捉弄一下她们了。<br>实现过程也很简单，生成的那个链接其实还是会跑到我们的项目演示地址来，url中有要搜索的参数，用js把要搜索的参数提取下来，让动画播放，然后把要搜索的参数post到百度就可以了。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;今天在群里看到一个链接，点开之后进入一个仿百度的界面，界面自动播放动画，自动把内容输入到搜索框，然后自动搜索。感觉挺有趣的，正好最近在看jquery，于是我就用jquery实现了一下这个功能。&lt;br&gt;项目演示地址 &lt;a href=&quot;http://lylllcc.github
+    
+    </summary>
+    
+      <category term="boring" scheme="https://lylllcc.github.io/categories/boring/"/>
+    
     
   </entry>
   

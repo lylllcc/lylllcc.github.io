@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lylllcc.github.io/"/>
-  <updated>2017-04-30T03:12:57.194Z</updated>
+  <updated>2017-05-01T15:33:20.842Z</updated>
   <id>https://lylllcc.github.io/</id>
   
   <author>
@@ -14,6 +14,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>图片隐藏信息</title>
+    <link href="https://lylllcc.github.io/2017/05/01/%E5%9B%BE%E7%89%87%E9%9A%90%E8%97%8F%E4%BF%A1%E6%81%AF/"/>
+    <id>https://lylllcc.github.io/2017/05/01/图片隐藏信息/</id>
+    <published>2017-05-01T15:22:12.000Z</published>
+    <updated>2017-05-01T15:33:20.842Z</updated>
+    
+    <content type="html"><![CDATA[<p>图片的像素里存储着RGB的信息。R、G、B分别为该像素的红、绿、蓝通道，每个通道的分量值范围在0~255，16进制则是00~FF，RGB分量值的小量变动，是肉眼无法分辨的，不影响对图片的识别。利用这个特性完全可以用算法对图片写入数据。</p>
+<p>熄灯了，我也懒得写了，直接放代码吧。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;canvas id=&quot;canvas&quot; width=&quot;256&quot; height=&quot;256&quot;&gt;&lt;/canvas&gt;</div></pre></td></tr></table></figure></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div></pre></td><td class="code"><pre><div class="line">var ctx = document.getElementById(&apos;canvas&apos;).getContext(&apos;2d&apos;);</div><div class="line">var textData;</div><div class="line">ctx.font = &apos;30px Microsoft Yahei&apos;;</div><div class="line">ctx.fillText(&apos;我只想被温柔的对待&apos;, 60, 130);</div><div class="line">textData = ctx.getImageData(0, 0, ctx.canvas.width, ctx.canvas.height).data;</div><div class="line">var img = new Image();</div><div class="line">var originalData;</div><div class="line">img.onload = function() &#123;</div><div class="line">    ctx.drawImage(img, 0, 0);</div><div class="line">    originalData = ctx.getImageData(0,0,ctx.canvas.width,ctx.canvas.height);</div><div class="line">    processData(originalData);  //加密</div><div class="line">   //mergeData(textData,&apos;R&apos;);   //解密</div><div class="line">&#125;;</div><div class="line">img.src = &apos;2.png&apos;;</div><div class="line"></div><div class="line">var processData = function(originalData)&#123;</div><div class="line">    var data = originalData.data;</div><div class="line">    for(var i = 0; i &lt; data.length; i++)&#123;</div><div class="line">        if(i % 4 == 0)&#123;</div><div class="line">            if(data[i] % 2 == 0)&#123;</div><div class="line">                data[i] = 0;</div><div class="line">            &#125; else &#123;</div><div class="line">                data[i] = 255;</div><div class="line">            &#125;</div><div class="line">        &#125; else if(i % 4 == 3)&#123;</div><div class="line">            continue;</div><div class="line">        &#125; else &#123;</div><div class="line">            data[i] = 0;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    ctx.putImageData(originalData, 0, 0);</div><div class="line">&#125;</div><div class="line"></div><div class="line"></div><div class="line">var mergeData = function(newData, color)&#123;</div><div class="line">    var oData = originalData.data;</div><div class="line">    var bit, offset;</div><div class="line">    switch(color)&#123;</div><div class="line">        case &apos;R&apos;:</div><div class="line">            bit = 0;</div><div class="line">            offset = 3;</div><div class="line">            break;</div><div class="line">        case &apos;G&apos;:</div><div class="line">            bit = 1;</div><div class="line">            offset = 2;</div><div class="line">            break;</div><div class="line">        case &apos;B&apos;:</div><div class="line">            bit = 2;</div><div class="line">            offset = 1;</div><div class="line">            break;</div><div class="line">    &#125;</div><div class="line"> </div><div class="line">    for(var i = 0; i &lt; oData.length; i++)&#123;</div><div class="line">        if(i % 4 == bit)&#123;</div><div class="line">            if(newData[i + offset] === 0 &amp;&amp; (oData[i] % 2 === 1))&#123;</div><div class="line">                if(oData[i] === 255)&#123;</div><div class="line">                    oData[i]--;</div><div class="line">                &#125; else &#123;</div><div class="line">                    oData[i]++;</div><div class="line">                &#125;</div><div class="line">            &#125; else if (newData[i + offset] !== 0 &amp;&amp; (oData[i] % 2 === 0))&#123;</div><div class="line">                if(oData[i] === 255)&#123;</div><div class="line">                    oData[i]--;</div><div class="line">                &#125; else &#123;</div><div class="line">                    oData[i]++;</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    ctx.putImageData(originalData, 0, 0);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;图片的像素里存储着RGB的信息。R、G、B分别为该像素的红、绿、蓝通道，每个通道的分量值范围在0~255，16进制则是00~FF，RGB分量值的小量变动，是肉眼无法分辨的，不影响对图片的识别。利用这个特性完全可以用算法对图片写入数据。&lt;/p&gt;
+&lt;p&gt;熄灯了，我也懒得写了，直
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>使用腾讯云服务器做ss转发</title>

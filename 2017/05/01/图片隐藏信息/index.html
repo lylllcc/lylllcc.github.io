@@ -10,7 +10,7 @@
     
     <title>
         
-            about | 
+            图片隐藏信息 | 
         
         刘阳的个人博客
     </title>
@@ -58,7 +58,7 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="https://lylllcc.github.io">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="about | 刘阳的个人博客">
+    <meta property="og:title" content="图片隐藏信息 | 刘阳的个人博客">
     <meta property="og:description" content="分享，思考，提高。">
     
 
@@ -227,6 +227,41 @@
 
                     <!-- Post TOC -->
 
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+    <!-- Left aligned menu below button -->
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        
+
+        <!--
+        <li class="mdl-menu__item">
+            Some Action
+        </li>
+        -->
+    </ul>
+
+
+
 
 <!-- Layouts -->
 
@@ -253,7 +288,7 @@
         
     
             <p class="article-headline-p">
-                about
+                图片隐藏信息
             </p>
         </div>
 
@@ -272,7 +307,7 @@
     <!-- Author Name & Date -->
     <div>
         <strong>lylllcc</strong>
-        <span>1月 15, 2017</span>
+        <span>5月 01, 2017</span>
     </div>
 
     <div class="section-spacer"></div>
@@ -312,7 +347,7 @@
 
     <!-- Share Weibo -->
     
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=about&url=https://lylllcc.github.io//about/index.html&pic=&searchPic=false&style=simple" target="_blank">
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=图片隐藏信息&url=https://lylllcc.github.io//2017/05/01/图片隐藏信息/index.html&pic=&searchPic=false&style=simple" target="_blank">
             <li class="mdl-menu__item">
                 分享到微博
             </li>
@@ -321,7 +356,7 @@
 
     <!-- Share Twitter -->
     
-        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=about&url=https://lylllcc.github.io//about/index.html&via=lylllcc" target="_blank">
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=图片隐藏信息&url=https://lylllcc.github.io//2017/05/01/图片隐藏信息/index.html&via=lylllcc" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Twitter
             </li>
@@ -330,7 +365,7 @@
 
     <!-- Share Facebook -->
     
-        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://lylllcc.github.io//about/index.html" target="_blank">
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://lylllcc.github.io//2017/05/01/图片隐藏信息/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Facebook
             </li>
@@ -339,7 +374,7 @@
 
     <!-- Share Google+ -->
     
-        <a class="post_share-link" href="https://plus.google.com/share?url=https://lylllcc.github.io//about/index.html" target="_blank">
+        <a class="post_share-link" href="https://plus.google.com/share?url=https://lylllcc.github.io//2017/05/01/图片隐藏信息/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Google+
             </li>
@@ -363,7 +398,10 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        
+        <p>图片的像素里存储着RGB的信息。R、G、B分别为该像素的红、绿、蓝通道，每个通道的分量值范围在0~255，16进制则是00~FF，RGB分量值的小量变动，是肉眼无法分辨的，不影响对图片的识别。利用这个特性完全可以用算法对图片写入数据。</p>
+<p>熄灯了，我也懒得写了，直接放代码吧。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;canvas id=&quot;canvas&quot; width=&quot;256&quot; height=&quot;256&quot;&gt;&lt;/canvas&gt;</div></pre></td></tr></table></figure></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div></pre></td><td class="code"><pre><div class="line">var ctx = document.getElementById(&apos;canvas&apos;).getContext(&apos;2d&apos;);</div><div class="line">var textData;</div><div class="line">ctx.font = &apos;30px Microsoft Yahei&apos;;</div><div class="line">ctx.fillText(&apos;我只想被温柔的对待&apos;, 60, 130);</div><div class="line">textData = ctx.getImageData(0, 0, ctx.canvas.width, ctx.canvas.height).data;</div><div class="line">var img = new Image();</div><div class="line">var originalData;</div><div class="line">img.onload = function() &#123;</div><div class="line">    ctx.drawImage(img, 0, 0);</div><div class="line">    originalData = ctx.getImageData(0,0,ctx.canvas.width,ctx.canvas.height);</div><div class="line">    processData(originalData);  //加密</div><div class="line">   //mergeData(textData,&apos;R&apos;);   //解密</div><div class="line">&#125;;</div><div class="line">img.src = &apos;2.png&apos;;</div><div class="line"></div><div class="line">var processData = function(originalData)&#123;</div><div class="line">    var data = originalData.data;</div><div class="line">    for(var i = 0; i &lt; data.length; i++)&#123;</div><div class="line">        if(i % 4 == 0)&#123;</div><div class="line">            if(data[i] % 2 == 0)&#123;</div><div class="line">                data[i] = 0;</div><div class="line">            &#125; else &#123;</div><div class="line">                data[i] = 255;</div><div class="line">            &#125;</div><div class="line">        &#125; else if(i % 4 == 3)&#123;</div><div class="line">            continue;</div><div class="line">        &#125; else &#123;</div><div class="line">            data[i] = 0;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    ctx.putImageData(originalData, 0, 0);</div><div class="line">&#125;</div><div class="line"></div><div class="line"></div><div class="line">var mergeData = function(newData, color)&#123;</div><div class="line">    var oData = originalData.data;</div><div class="line">    var bit, offset;</div><div class="line">    switch(color)&#123;</div><div class="line">        case &apos;R&apos;:</div><div class="line">            bit = 0;</div><div class="line">            offset = 3;</div><div class="line">            break;</div><div class="line">        case &apos;G&apos;:</div><div class="line">            bit = 1;</div><div class="line">            offset = 2;</div><div class="line">            break;</div><div class="line">        case &apos;B&apos;:</div><div class="line">            bit = 2;</div><div class="line">            offset = 1;</div><div class="line">            break;</div><div class="line">    &#125;</div><div class="line"> </div><div class="line">    for(var i = 0; i &lt; oData.length; i++)&#123;</div><div class="line">        if(i % 4 == bit)&#123;</div><div class="line">            if(newData[i + offset] === 0 &amp;&amp; (oData[i] % 2 === 1))&#123;</div><div class="line">                if(oData[i] === 255)&#123;</div><div class="line">                    oData[i]--;</div><div class="line">                &#125; else &#123;</div><div class="line">                    oData[i]++;</div><div class="line">                &#125;</div><div class="line">            &#125; else if (newData[i + offset] !== 0 &amp;&amp; (oData[i] % 2 === 0))&#123;</div><div class="line">                if(oData[i] === 255)&#123;</div><div class="line">                    oData[i]--;</div><div class="line">                &#125; else &#123;</div><div class="line">                    oData[i]++;</div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    ctx.putImageData(originalData, 0, 0);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+
     
 
     
@@ -388,6 +426,14 @@
             <!-- Post Prev & Next Nav -->
             <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
     <!-- Prev Nav -->
+    
+        <a href="/2017/04/30/使用腾讯云服务器做ss转发/" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            新篇
+        </a>
     
 
     <!-- Section Spacer -->
@@ -545,6 +591,14 @@ It will not impact the appearance and can give developers a lot of support :)
 </aside>
 
                     
+
+                    
+                        <!-- Footer Top Button -->
+                        <div class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
 
                     
 
